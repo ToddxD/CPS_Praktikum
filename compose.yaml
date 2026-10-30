@@ -1,0 +1,46 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - mosquitto-data:/mosquitto/data
+      - mosquitto-log:/mosquitto/log
+
+  job-generator:
+    build:
+      context: .
+      dockerfile: job-generator/Dockerfile.job-generator
+    container_name: job-generator
+    restart: unless-stopped
+    depends_on:
+      - mosquitto
+    environment:
+      MQTT_BROKER_HOST: mosquitto
+      MQTT_BROKER_PORT: "1883"
+
+  fuxa:
+    image: frangoteam/fuxa:latest
+    container_name: fuxa
+    restart: unless-stopped
+    depends_on:
+      - mosquitto
+    ports:
+      - "1881:1881"
+    volumes:
+      - fuxa-appdata:/usr/src/app/FUXA/server/_appdata
+      - fuxa-db:/usr/src/app/FUXA/server/_db
+      - fuxa-logs:/usr/src/app/FUXA/server/_logs
+      - fuxa-images:/usr/src/app/FUXA/server/_images
+
+volumes:
+  mosquitto-data:
+  mosquitto-log:
+  fuxa-appdata:
+  fuxa-db:
+  fuxa-logs:
+  fuxa-images:
