@@ -1,4 +1,0 @@
-packaging==26.3
-paho-mqtt==2.1.0
-setuptools==84.2.1
-wheel==0.48.0

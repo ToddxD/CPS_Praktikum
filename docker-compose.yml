@@ -1,0 +1,91 @@
+x-opcua-env: &opcua-env
+  OPC_NS_URI: http://haw-hamburg.de/cps
+  OPC_SERVER_URL: opc.tcp://opcua_server:4840/haw/cps
+
+services:
+  opcua_server:
+    build:
+      context: ./src/opcua_server
+      dockerfile: Dockerfile
+    image: opcua_server:0.1
+    container_name: opcua_server
+    ports:
+      - "127.0.0.1:4840:4840"
+    environment:
+      <<: *opcua-env
+    healthcheck:
+      test: ["CMD-SHELL", "python -c 'import socket; s=socket.socket(); s.settimeout(1); s.connect((\"localhost\", 4840)); s.close()' || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+      start_period: 10s
+
+  tick_gen:
+    build:
+      context: ./src/tick_gen
+      dockerfile: Dockerfile
+    image: tick_gen:0.1
+    container_name: tick_gen
+    environment:
+      <<: *opcua-env
+    depends_on:
+      opcua_server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  chaos_sensor:
+    build:
+      context: ./src/chaos_sensor
+      dockerfile: Dockerfile
+    image: chaos_sensor:0.1
+    container_name: chaos_sensor
+    environment:
+      <<: *opcua-env
+    depends_on:
+      opcua_server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  fuxa:
+    image: frangoteam/fuxa:1.2.8
+    restart: unless-stopped
+    volumes:
+      - './appdata:/usr/src/app/FUXA/server/_appdata'
+      - './db:/usr/src/app/FUXA/server/_db'
+      - './logs:/usr/src/app/FUXA/server/_logs'
+      - './images:/usr/src/app/FUXA/server/_images'
+    ports:
+      - '1881:1881'
+    environment:
+      - TZ=Europe/Berlin
+    depends_on:
+      opcua_server:
+        condition: service_healthy
+
+  mqttbroker:
+      image: eclipse-mosquitto:2.1.2-alpine
+      container_name: mqttbroker
+      ports:
+        - "127.0.0.1:8883:1883"
+      volumes:
+        - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:ro
+
+  tick_gen_mqtt:
+      build:
+        context: ./src/tick_gen_mqtt
+        dockerfile: Dockerfile
+      image: tick_gen_mqtt:0.1
+      container_name: tick_gen_mqtt
+      restart: unless-stopped
+      depends_on:
+        - mqttbroker
+
+  chaos_sensor_mqtt:
+      build:
+        context: ./src/chaos_sensor_mqtt
+        dockerfile: Dockerfile
+      image: chaos_sensor_mqtt:0.1
+      container_name: chaos_sensor_mqtt
+      restart: unless-stopped
+      depends_on:
+        - mqttbroker

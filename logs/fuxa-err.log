@@ -1,0 +1,252 @@
+2026-02-25T14:18:30.919Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:18:31.445Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:31.446Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:32.434Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:32.435Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:57.895Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:35:57.933Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:57.934Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:58.936Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:58.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:59.936Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:59.936Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:00.938Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:00.939Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:01.950Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:01.950Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:48:03.766Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:48:04.491Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:48:04.491Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:41.142Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:51:42.009Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:42.010Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:43.104Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:43.160Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:44.012Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:44.013Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:45.072Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:45.080Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:25:15.447Z [error] device-browse: Device not found!
+2026-03-04T10:26:22.082Z [error] device-browse: Device not found!
+2026-03-04T10:26:45.273Z [error] device-browse: Device not found!
+2026-03-04T10:27:02.769Z [error] device-browse: Device not found!
+2026-03-04T10:28:01.360Z [error] device-browse: browse-error: TypeError: Cannot read properties of null (reading 'on')
+2026-03-04T10:29:15.742Z [error] device-browse: Device not found!
+2026-03-04T10:40:48.320Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T10:40:49.045Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:49.047Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:50.043Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:50.044Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:51.052Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:51.053Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:29.557Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T10:57:30.160Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:30.163Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:31.160Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:31.162Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:43.208Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T11:16:43.342Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:43.343Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:44.344Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:44.345Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:45.346Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:45.347Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:46.389Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:46.390Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:47.367Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:47.367Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T22:13:18.173Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T22:40:20.292Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T22:40:21.296Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:21.296Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:22.290Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:22.291Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:34.206Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T23:01:34.618Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:34.619Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:35.619Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:35.619Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:36.621Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:36.621Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:37.623Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:37.623Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:00.623Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T23:59:00.819Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:00.819Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:01.818Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:01.818Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:02.819Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:02.819Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:15:17.436Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T00:15:18.028Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:15:18.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:25.804Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T00:24:26.029Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:26.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:27.031Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:27.031Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:40:47.335Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:12:00.732Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:12:00.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:00.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:01.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:01.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T01:27:46.505Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:43:31.425Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:59:45.899Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:59:46.012Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:59:46.013Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:29.744Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T02:17:29.943Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:29.943Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:30.944Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:30.944Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:33:15.752Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T02:33:15.798Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:33:15.799Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:49:06.359Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:04:51.404Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:20:35.869Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:20:35.906Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:20:35.906Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:49.879Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:36:49.937Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:49.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:50.937Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:50.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:32.796Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:54:32.969Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:32.969Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:33.969Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:33.970Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:08:41.639Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:22:06.249Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:37:51.798Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:37:51.836Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:51.836Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:52.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:52.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:53.838Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:53.839Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:54.839Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:54.839Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:55.869Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:55.869Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:41.733Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:53:41.781Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:41.781Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:42.781Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:42.781Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:43.784Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:43.784Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:44.783Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:44.783Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:45.786Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:45.787Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:01.659Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:09:01.681Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:01.681Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:02.682Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:02.683Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:03.684Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:03.685Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:04.686Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:04.686Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:05.687Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:05.687Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:27:20.045Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:27:20.796Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:27:20.796Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:43:05.978Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:59:19.436Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:59:19.556Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:19.556Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:20.557Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:20.557Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:23:02.612Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:23:03.234Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:23:03.234Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:38:48.531Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:54:33.946Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:54:33.982Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:33.982Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:34.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:34.985Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:35.983Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:35.983Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:36.989Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:36.990Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:37.987Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:37.987Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:51.727Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:12:52.002Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:52.002Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:53.004Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:53.004Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:19:50.879Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:19:51.400Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:19:51.400Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:31:43.471Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:31:44.339Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:31:44.339Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:24.540Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:41:25.107Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:25.108Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:26.109Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:26.110Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:17.321Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:44:18.340Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:18.341Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:19.341Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:19.341Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:20.345Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:20.348Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:21.350Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:21.351Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:24.798Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:00:24.854Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:24.856Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:25.853Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:25.854Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:04.890Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:12:05.410Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:05.414Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:06.457Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:06.501Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:05.499Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:16:06.845Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:06.857Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:08.313Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:08.495Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:09.169Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:09.199Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:08.195Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:15:08.499Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:08.500Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:09.497Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:09.498Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:10.495Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:10.496Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:11.497Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:11.497Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:12.498Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:12.498Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:47.935Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:23:47.998Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.985Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:49.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:49.986Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:50.986Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:50.987Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:51.988Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:51.989Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:21.220Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:33:21.324Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:21.325Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:22.323Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:22.324Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:23.325Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:23.326Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:35:56.322Z [error] 'OPCUA' session keepalive failure!

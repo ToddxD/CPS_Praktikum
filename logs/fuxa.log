@@ -1,0 +1,1181 @@
+2026-02-25T12:19:23.512Z [info] FUXA V.1.3.0-2710
+2026-02-25T12:19:23.519Z [info] daqstorage: init successful!
+2026-02-25T12:19:23.833Z [info] api: init successful!
+2026-02-25T12:19:23.836Z [info] plugin-installed ads-client 2.1.0
+2026-02-25T12:19:23.837Z [info] plugin-installed node-opcua 2.149.0
+2026-02-25T12:19:23.838Z [info] plugin-installed modbus-serial 8.0.19
+2026-02-25T12:19:23.838Z [info] plugin-installed node-bacnet 0.2.4
+2026-02-25T12:19:23.838Z [info] plugin-installed odbc 2.4.9
+2026-02-25T12:19:23.838Z [info] plugin-installed node-red 4.1.1
+2026-02-25T12:19:23.838Z [info] runtime init plugins successful!
+2026-02-25T12:19:23.840Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-02-25T12:19:23.842Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-02-25T12:19:23.842Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-02-25T12:19:23.843Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-02-25T12:19:23.861Z [info] currentstorage init successful!
+2026-02-25T12:19:23.865Z [info] apikeys.apiKeysStorage-init successful!
+2026-02-25T12:19:23.865Z [info] runtime init apiKeys successful!
+2026-02-25T12:19:23.876Z [info] runtime init scheduler services successful!
+2026-02-25T12:19:23.879Z [info] users.usrstorage-init successful!
+2026-02-25T12:19:23.956Z [info] project.prjstorage-init-successful!
+2026-02-25T12:19:23.968Z [info] users.usrstorage-set-default successful!
+2026-02-25T12:19:23.968Z [info] runtime init users successful!
+2026-02-25T12:19:23.980Z [info] project.prjstorage-set-default-successful!
+2026-02-25T12:19:23.980Z [info] runtime init project successful!
+2026-02-25T12:19:23.980Z [info] FUXA init in  482ms.
+2026-02-25T12:19:23.991Z [info] daqstorage reset!
+2026-02-25T12:19:23.991Z [info] alarms check start
+2026-02-25T12:19:23.991Z [info] notificator check start
+2026-02-25T12:19:23.992Z [info] scripts.start-checkstatus
+2026-02-25T12:19:23.992Z [info] jobs check start
+2026-02-25T12:19:23.992Z [info] FUXA started!
+2026-02-25T12:19:23.994Z [info] WebServer is running http://127.0.0.1:1881/
+2026-02-25T12:19:25.000Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-02-25T12:19:25.029Z [info] alarms.alarmstorage-init-successful!
+2026-02-25T12:31:37.944Z [info] socket.io client connected pttHqrndLwgkFf8pAAAC
+2026-02-25T12:32:48.735Z [info] 'FUXA Server' data loaded (1)
+2026-02-25T12:32:48.735Z [info] 'FUXA Server' created
+2026-02-25T12:32:48.739Z [info] 'FUXA Server' start
+2026-02-25T12:32:50.067Z [info] 'OPCUA' data loaded (0)
+2026-02-25T12:32:50.067Z [info] 'OPCUA' created
+2026-02-25T12:32:50.068Z [info] 'OPCUA' start
+2026-02-25T12:32:50.069Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225133248.db' database
+2026-02-25T12:32:50.069Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-02-25T12:32:50.071Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225133250.db' database
+2026-02-25T12:32:50.071Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-02-25T12:32:50.075Z [info] 'FUXA Server' restored 0/0 values
+2026-02-25T12:32:50.075Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225133248.db' database
+2026-02-25T12:32:50.078Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-02-25T12:32:50.078Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225133250.db' database
+2026-02-25T12:32:50.078Z [info] daqstorage.load-map successful! '0'
+2026-02-25T12:32:50.078Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-02-25T12:32:50.083Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-02-25T12:32:50.268Z [info] 'OPCUA' connection
+2026-02-25T12:32:50.282Z [info] 'OPCUA' connected!
+2026-02-25T12:32:50.283Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T12:32:50.289Z [info] 'OPCUA' subscription created!
+2026-02-25T12:33:34.567Z [info] 'OPCUA' stop
+2026-02-25T12:33:34.575Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T12:33:34.582Z [info] 'OPCUA' exist
+2026-02-25T12:33:34.582Z [info] 'OPCUA' data loaded (1)
+2026-02-25T12:33:34.583Z [info] 'OPCUA' start
+2026-02-25T12:33:34.600Z [info] 'OPCUA' connection
+2026-02-25T12:33:34.604Z [info] 'OPCUA' connected!
+2026-02-25T12:33:34.606Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T12:33:34.610Z [info] 'OPCUA' subscription created!
+2026-02-25T12:34:39.525Z [info] socket.io client connected aRT5A--GaLXDx9CZAAAF
+2026-02-25T12:35:19.720Z [info] socket.io client connected g8zJJio6IIUh1VAZAAAI
+2026-02-25T12:36:40.431Z [info] socket.io client connected F-6VJjbTIq8BIkBOAAAL
+2026-02-25T12:40:11.701Z [info] socket.io client connected 5JMo_jdHXUOB7yu8AAAO
+2026-02-25T12:40:42.763Z [info] socket.io client connected 9ISqSPTo0RB9gmkiAAAR
+2026-02-25T12:40:54.278Z [info] socket.io client connected K7UrEASIup40M5CeAAAU
+2026-02-25T12:41:50.902Z [info] socket.io client connected 7wIkMamzyrAYQwcHAAAX
+2026-02-25T12:42:32.939Z [info] socket.io client connected GqPIM9107lGjci0FAAAa
+2026-02-25T12:43:13.985Z [info] socket.io client connected anizqHibM68IfcdWAAAd
+2026-02-25T12:43:46.601Z [info] socket.io client connected LIi6VXG8MBRi6jWNAAAg
+2026-02-25T12:44:10.738Z [info] socket.io client connected rpI_nlSLfN-Mr99CAAAj
+2026-02-25T12:46:43.378Z [info] socket.io client connected IoD2jv82Dq_A5YNFAAAm
+2026-02-25T12:47:24.959Z [info] socket.io client connected wshnRG_fEIl3oux_AAAp
+2026-02-25T13:20:31.842Z [info] socket.io client connected 3ODCBudoOqOXKGGwAAAs
+2026-02-25T13:21:31.792Z [info] FUXA V.1.3.0-2710
+2026-02-25T13:21:31.809Z [info] daqstorage: init successful!
+2026-02-25T13:21:32.244Z [info] api: init successful!
+2026-02-25T13:21:32.249Z [info] plugin-installed ads-client 2.1.0
+2026-02-25T13:21:32.250Z [info] plugin-installed node-opcua 2.149.0
+2026-02-25T13:21:32.250Z [info] plugin-installed modbus-serial 8.0.19
+2026-02-25T13:21:32.250Z [info] plugin-installed node-bacnet 0.2.4
+2026-02-25T13:21:32.251Z [info] plugin-installed odbc 2.4.9
+2026-02-25T13:21:32.251Z [info] plugin-installed node-red 4.1.1
+2026-02-25T13:21:32.251Z [info] runtime init plugins successful!
+2026-02-25T13:21:32.254Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-02-25T13:21:32.269Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-02-25T13:21:32.270Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-02-25T13:21:32.270Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-02-25T13:21:32.278Z [info] currentstorage init successful!
+2026-02-25T13:21:32.279Z [info] apikeys.apiKeysStorage-init successful!
+2026-02-25T13:21:32.280Z [info] runtime init apiKeys successful!
+2026-02-25T13:21:32.284Z [info] runtime init scheduler services successful!
+2026-02-25T13:21:32.285Z [info] users.usrstorage-init successful!
+2026-02-25T13:21:32.285Z [info] runtime init users successful!
+2026-02-25T13:21:32.286Z [info] project.prjstorage-init-successful!
+2026-02-25T13:21:32.286Z [info] runtime init project successful!
+2026-02-25T13:21:32.286Z [info] FUXA init in  528ms.
+2026-02-25T13:21:32.303Z [info] daqstorage reset!
+2026-02-25T13:21:32.304Z [info] 'FUXA Server' data loaded (1)
+2026-02-25T13:21:32.304Z [info] 'FUXA Server' created
+2026-02-25T13:21:34.326Z [info] 'OPCUA' data loaded (1)
+2026-02-25T13:21:34.328Z [info] 'OPCUA' created
+2026-02-25T13:21:34.338Z [info] 'FUXA Server' start
+2026-02-25T13:21:34.339Z [info] 'OPCUA' start
+2026-02-25T13:21:34.339Z [info] alarms check start
+2026-02-25T13:21:34.340Z [info] notificator check start
+2026-02-25T13:21:34.340Z [info] scripts.start-checkstatus
+2026-02-25T13:21:34.340Z [info] jobs check start
+2026-02-25T13:21:34.346Z [info] FUXA started!
+2026-02-25T13:21:34.354Z [info] WebServer is running http://127.0.0.1:1881/
+2026-02-25T13:21:34.356Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225133248.db' database
+2026-02-25T13:21:34.356Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-02-25T13:21:34.356Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225142132.db' database
+2026-02-25T13:21:34.357Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225133250.db' database
+2026-02-25T13:21:34.357Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-02-25T13:21:34.357Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225142134.db' database
+2026-02-25T13:21:34.381Z [info] 'FUXA Server' restored 0/0 values
+2026-02-25T13:21:34.387Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-02-25T13:21:34.400Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260225133248.db'
+2026-02-25T13:21:34.401Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-02-25T13:21:34.404Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225133250.db'
+2026-02-25T13:21:34.405Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225142134.db' database
+2026-02-25T13:21:34.405Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225142132.db' database
+2026-02-25T13:21:34.409Z [info] daqstorage.load-map successful! '0'
+2026-02-25T13:21:34.410Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-02-25T13:21:34.422Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260225133248.db' database deleted!
+2026-02-25T13:21:34.423Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225133250.db' database deleted!
+2026-02-25T13:21:34.507Z [info] 'OPCUA' connection
+2026-02-25T13:21:34.530Z [info] 'OPCUA' connected!
+2026-02-25T13:21:34.540Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T13:21:34.553Z [info] 'OPCUA' subscription created!
+2026-02-25T13:21:35.352Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-02-25T13:21:35.355Z [info] alarms.alarmstorage-init-successful!
+2026-02-25T13:21:36.857Z [info] socket.io client connected feHenbM9c4CobpdsAAAB
+2026-02-25T13:21:55.152Z [info] 'OPCUA' stop
+2026-02-25T13:21:55.179Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T13:21:55.205Z [info] 'OPCUA' exist
+2026-02-25T13:21:55.205Z [info] 'OPCUA' data loaded (0)
+2026-02-25T13:21:55.205Z [info] 'OPCUA' start
+2026-02-25T13:21:55.394Z [info] 'OPCUA' connection
+2026-02-25T13:21:55.417Z [info] 'OPCUA' connected!
+2026-02-25T13:21:55.421Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T13:21:55.430Z [info] 'OPCUA' subscription created!
+2026-02-25T13:22:07.163Z [info] 'OPCUA' stop
+2026-02-25T13:22:07.165Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T13:22:07.170Z [info] 'OPCUA' exist
+2026-02-25T13:22:07.170Z [info] 'OPCUA' data loaded (2)
+2026-02-25T13:22:07.170Z [info] 'OPCUA' start
+2026-02-25T13:22:07.213Z [info] 'OPCUA' connection
+2026-02-25T13:22:07.217Z [info] 'OPCUA' connected!
+2026-02-25T13:22:07.219Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T13:22:07.221Z [info] 'OPCUA' subscription created!
+2026-02-25T13:24:02.272Z [info] socket.io client connected B4Cl8TZs1XKcPEHkAAAE
+2026-02-25T13:24:40.026Z [info] socket.io client connected mqD10RWLkwkcPEseAAAH
+2026-02-25T13:26:46.002Z [info] socket.io client connected 3Rl2OJhbKPvujZhXAAAK
+2026-02-25T13:28:29.188Z [info] socket.io client connected ABbrpquyOcfTrqIGAAAN
+2026-02-25T13:28:50.505Z [info] socket.io client connected IP6udu2JS4hsNhbUAAAQ
+2026-02-25T13:28:56.149Z [info] socket.io client connected nhun7xxB2xOivKKvAAAT
+2026-02-25T13:29:47.626Z [info] socket.io client connected mNzqsbVhLLrOm3J3AAAW
+2026-02-25T13:33:00.010Z [info] socket.io client connected pidLKQF91TyWQM4jAAAZ
+2026-02-25T13:33:59.160Z [info] socket.io client connected THVgS1WA2kaMOHhSAAAc
+2026-02-25T13:37:01.707Z [info] socket.io client connected 0eUGish7WHHi5651AAAf
+2026-02-25T13:37:28.674Z [info] socket.io client connected 31jdaH2aERx1Dj57AAAi
+2026-02-25T14:18:30.919Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:18:30.950Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T14:18:31.445Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:31.446Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:32.434Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:32.435Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:18:37.820Z [info] 'OPCUA' connection
+2026-02-25T14:18:37.842Z [info] 'OPCUA' connected!
+2026-02-25T14:18:37.847Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T14:18:37.849Z [info] 'OPCUA' subscription created!
+2026-02-25T14:35:57.895Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:35:57.900Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T14:35:57.933Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:57.934Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:58.936Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:58.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:59.936Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:35:59.936Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:00.938Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:00.939Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:01.950Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:01.950Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:36:07.778Z [info] 'OPCUA' connection
+2026-02-25T14:36:07.782Z [info] 'OPCUA' connected!
+2026-02-25T14:36:07.784Z [info] 'OPCUA' subscription created!
+2026-02-25T14:36:07.784Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T14:48:03.766Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:48:03.776Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T14:48:04.491Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:48:04.491Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:48:10.196Z [info] 'OPCUA' connection
+2026-02-25T14:48:10.212Z [info] 'OPCUA' connected!
+2026-02-25T14:48:10.223Z [info] 'OPCUA' subscription created!
+2026-02-25T14:48:10.224Z [info] 'OPCUA' restored 0/0 values
+2026-02-25T14:51:41.142Z [error] 'OPCUA' session keepalive failure!
+2026-02-25T14:51:41.146Z [warn] 'OPCUA' Warning => Session closed
+2026-02-25T14:51:42.009Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:42.010Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:43.104Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:43.160Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:44.012Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:44.013Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:45.072Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:45.080Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-02-25T14:51:50.821Z [info] 'OPCUA' connection
+2026-02-25T14:51:50.832Z [info] 'OPCUA' connected!
+2026-02-25T14:51:50.838Z [info] 'OPCUA' subscription created!
+2026-02-25T14:51:50.838Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T08:00:37.511Z [info] FUXA V.1.3.0-2710
+2026-03-04T08:00:37.525Z [info] daqstorage: init successful!
+2026-03-04T08:00:37.828Z [info] api: init successful!
+2026-03-04T08:00:37.829Z [info] plugin-installed ads-client 2.1.0
+2026-03-04T08:00:37.829Z [info] plugin-installed node-opcua 2.149.0
+2026-03-04T08:00:37.830Z [info] plugin-installed modbus-serial 8.0.19
+2026-03-04T08:00:37.830Z [info] plugin-installed node-bacnet 0.2.4
+2026-03-04T08:00:37.830Z [info] plugin-installed odbc 2.4.9
+2026-03-04T08:00:37.830Z [info] plugin-installed node-red 4.1.1
+2026-03-04T08:00:37.830Z [info] runtime init plugins successful!
+2026-03-04T08:00:37.831Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-03-04T08:00:37.832Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-03-04T08:00:37.832Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-03-04T08:00:37.832Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-03-04T08:00:37.834Z [info] currentstorage init successful!
+2026-03-04T08:00:37.834Z [info] apikeys.apiKeysStorage-init successful!
+2026-03-04T08:00:37.835Z [info] runtime init apiKeys successful!
+2026-03-04T08:00:37.838Z [info] runtime init scheduler services successful!
+2026-03-04T08:00:37.840Z [info] users.usrstorage-init successful!
+2026-03-04T08:00:37.841Z [info] runtime init users successful!
+2026-03-04T08:00:37.843Z [info] project.prjstorage-init-successful!
+2026-03-04T08:00:37.843Z [info] runtime init project successful!
+2026-03-04T08:00:37.843Z [info] FUXA init in  353ms.
+2026-03-04T08:00:37.852Z [info] daqstorage reset!
+2026-03-04T08:00:37.852Z [info] 'FUXA Server' data loaded (1)
+2026-03-04T08:00:37.852Z [info] 'FUXA Server' created
+2026-03-04T08:00:38.660Z [info] 'OPCUA' data loaded (2)
+2026-03-04T08:00:38.660Z [info] 'OPCUA' created
+2026-03-04T08:00:38.661Z [info] 'FUXA Server' start
+2026-03-04T08:00:38.661Z [info] 'OPCUA' start
+2026-03-04T08:00:38.661Z [info] alarms check start
+2026-03-04T08:00:38.661Z [info] notificator check start
+2026-03-04T08:00:38.661Z [info] scripts.start-checkstatus
+2026-03-04T08:00:38.661Z [info] jobs check start
+2026-03-04T08:00:38.663Z [info] FUXA started!
+2026-03-04T08:00:38.664Z [info] WebServer is running http://127.0.0.1:1881/
+2026-03-04T08:00:38.664Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260225142132.db' database
+2026-03-04T08:00:38.664Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260304090037.db' database
+2026-03-04T08:00:38.665Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-04T08:00:38.665Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225142134.db' database
+2026-03-04T08:00:38.665Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-04T08:00:38.665Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260304090038.db' database
+2026-03-04T08:00:38.671Z [info] 'FUXA Server' restored 0/0 values
+2026-03-04T08:00:38.671Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260225142132.db'
+2026-03-04T08:00:38.672Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225142134.db'
+2026-03-04T08:00:38.672Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-04T08:00:38.673Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-04T08:00:38.674Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260304090037.db' database
+2026-03-04T08:00:38.675Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260225142134.db' database deleted!
+2026-03-04T08:00:38.679Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260225142132.db' database deleted!
+2026-03-04T08:00:38.679Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260304090038.db' database
+2026-03-04T08:00:38.679Z [info] daqstorage.load-map successful! '0'
+2026-03-04T08:00:38.679Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-03-04T08:00:39.068Z [info] 'OPCUA' connection
+2026-03-04T08:00:39.072Z [info] 'OPCUA' connected!
+2026-03-04T08:00:39.074Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T08:00:39.076Z [info] 'OPCUA' subscription created!
+2026-03-04T08:00:39.679Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-03-04T08:00:39.679Z [info] alarms.alarmstorage-init-successful!
+2026-03-04T08:11:01.421Z [info] socket.io client connected gJXqDNezlxhxU-7HAAAC
+2026-03-04T08:13:44.179Z [info] 'OPCUA' stop
+2026-03-04T08:13:44.187Z [warn] 'OPCUA' Warning => Session closed
+2026-03-04T08:13:44.199Z [info] 'OPCUA' exist
+2026-03-04T08:13:44.199Z [info] 'OPCUA' data loaded (2)
+2026-03-04T08:13:44.199Z [info] 'OPCUA' start
+2026-03-04T08:13:44.232Z [info] 'OPCUA' connection
+2026-03-04T08:13:44.240Z [info] 'OPCUA' connected!
+2026-03-04T08:13:44.243Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T08:13:44.245Z [info] 'OPCUA' subscription created!
+2026-03-04T08:51:46.935Z [info] socket.io client connected 9VfJbGMYdlsUac5tAAAE
+2026-03-04T09:54:43.663Z [info] socket.io client connected TbzjsqiYjGe0E0qRAAAH
+2026-03-04T09:55:47.970Z [info] 'FUXA Server' stop
+2026-03-04T09:55:47.971Z [info] 'FUXA Server' exist
+2026-03-04T09:55:47.971Z [info] 'FUXA Server' data loaded (2)
+2026-03-04T09:55:47.972Z [info] 'FUXA Server' start
+2026-03-04T09:55:47.976Z [info] 'MQTT' data loaded (0)
+2026-03-04T09:55:47.977Z [info] 'MQTT' created
+2026-03-04T09:55:47.981Z [info] 'FUXA Server' restored 0/0 values
+2026-03-04T09:55:47.983Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-04T09:55:47.983Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260304105547.db' database
+2026-03-04T09:55:47.986Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260304105547.db' database
+2026-03-04T09:55:47.986Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-04T09:55:47.987Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-03-04T09:56:05.252Z [info] 'MQTT' stop
+2026-03-04T09:56:05.253Z [info] 'MQTT' exist
+2026-03-04T09:56:05.254Z [info] 'MQTT' data loaded (0)
+2026-03-04T10:22:55.779Z [info] socket.io client connected VeY-xrLAsEgo4ZMTAAAK
+2026-03-04T10:23:06.813Z [info] 'MQTT' data loaded (0)
+2026-03-04T10:23:06.813Z [info] 'MQTT' created
+2026-03-04T10:24:41.422Z [info] 'MQTT' stop
+2026-03-04T10:24:41.423Z [info] 'MQTT' exist
+2026-03-04T10:24:41.423Z [info] 'MQTT' data loaded (0)
+2026-03-04T10:25:15.447Z [error] device-browse: Device not found!
+2026-03-04T10:26:22.082Z [error] device-browse: Device not found!
+2026-03-04T10:26:45.273Z [error] device-browse: Device not found!
+2026-03-04T10:27:02.769Z [error] device-browse: Device not found!
+2026-03-04T10:27:41.664Z [info] 'MQTT' data loaded (0)
+2026-03-04T10:27:41.665Z [info] 'MQTT' created
+2026-03-04T10:28:01.360Z [error] device-browse: browse-error: TypeError: Cannot read properties of null (reading 'on')
+2026-03-04T10:28:20.303Z [info] 'MQTT' stop
+2026-03-04T10:28:20.304Z [info] 'MQTT' exist
+2026-03-04T10:28:20.304Z [info] 'MQTT' data loaded (1)
+2026-03-04T10:29:03.529Z [info] 'MQTT' data loaded (1)
+2026-03-04T10:29:03.529Z [info] 'MQTT' created
+2026-03-04T10:29:11.691Z [info] 'MQTT' stop
+2026-03-04T10:29:11.691Z [info] 'MQTT' exist
+2026-03-04T10:29:11.691Z [info] 'MQTT' data loaded (0)
+2026-03-04T10:29:15.742Z [error] device-browse: Device not found!
+2026-03-04T10:34:51.791Z [info] socket.io client connected PdFB2o4lkiTGEdQ0AAAN
+2026-03-04T10:34:51.820Z [info] socket.io client connected uFanleWLskLkS8PRAAAO
+2026-03-04T10:40:48.320Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T10:40:48.328Z [warn] 'OPCUA' Warning => Session closed
+2026-03-04T10:40:49.045Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:49.047Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:50.043Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:50.044Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:51.052Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:51.053Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:40:56.423Z [info] 'OPCUA' connection
+2026-03-04T10:40:56.446Z [info] 'OPCUA' connected!
+2026-03-04T10:40:56.450Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T10:40:56.451Z [info] 'OPCUA' subscription created!
+2026-03-04T10:57:29.557Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T10:57:29.563Z [warn] 'OPCUA' Warning => Session closed
+2026-03-04T10:57:30.160Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:30.163Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:31.160Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:31.162Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T10:57:36.921Z [info] 'OPCUA' connection
+2026-03-04T10:57:37.003Z [info] 'OPCUA' connected!
+2026-03-04T10:57:37.101Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T10:57:37.118Z [info] 'OPCUA' subscription created!
+2026-03-04T11:16:43.208Z [error] 'OPCUA' session keepalive failure!
+2026-03-04T11:16:43.214Z [warn] 'OPCUA' Warning => Session closed
+2026-03-04T11:16:43.342Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:43.343Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:44.344Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:44.345Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:45.346Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:45.347Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:46.389Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:46.390Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:47.367Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:47.367Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-04T11:16:52.558Z [info] 'OPCUA' connection
+2026-03-04T11:16:52.564Z [info] 'OPCUA' connected!
+2026-03-04T11:16:52.567Z [info] 'OPCUA' restored 0/0 values
+2026-03-04T11:16:52.569Z [info] 'OPCUA' subscription created!
+2026-03-04T11:17:44.984Z [info] socket.io client connected lHh3dXvHrSwmvaGmAAAR
+2026-03-04T11:17:45.014Z [info] socket.io client connected RpxdtmFU4ZjAAHFyAAAS
+2026-03-10T14:05:49.164Z [info] FUXA V.1.3.0-2710
+2026-03-10T14:05:49.175Z [info] daqstorage: init successful!
+2026-03-10T14:05:49.547Z [info] api: init successful!
+2026-03-10T14:05:49.550Z [info] plugin-installed ads-client 2.1.0
+2026-03-10T14:05:49.551Z [info] plugin-installed node-opcua 2.149.0
+2026-03-10T14:05:49.551Z [info] plugin-installed modbus-serial 8.0.19
+2026-03-10T14:05:49.552Z [info] plugin-installed node-bacnet 0.2.4
+2026-03-10T14:05:49.552Z [info] plugin-installed odbc 2.4.9
+2026-03-10T14:05:49.552Z [info] plugin-installed node-red 4.1.1
+2026-03-10T14:05:49.552Z [info] runtime init plugins successful!
+2026-03-10T14:05:49.554Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-03-10T14:05:49.557Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-03-10T14:05:49.557Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-03-10T14:05:49.558Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-03-10T14:05:49.560Z [info] currentstorage init successful!
+2026-03-10T14:05:49.560Z [info] apikeys.apiKeysStorage-init successful!
+2026-03-10T14:05:49.561Z [info] runtime init apiKeys successful!
+2026-03-10T14:05:49.564Z [info] runtime init scheduler services successful!
+2026-03-10T14:05:49.567Z [info] users.usrstorage-init successful!
+2026-03-10T14:05:49.567Z [info] runtime init users successful!
+2026-03-10T14:05:49.571Z [info] project.prjstorage-init-successful!
+2026-03-10T14:05:49.572Z [info] runtime init project successful!
+2026-03-10T14:05:49.572Z [info] FUXA init in  442ms.
+2026-03-10T14:05:49.581Z [info] daqstorage reset!
+2026-03-10T14:05:49.581Z [info] 'FUXA Server' data loaded (2)
+2026-03-10T14:05:49.582Z [info] 'FUXA Server' created
+2026-03-10T14:05:52.249Z [info] 'OPCUA' data loaded (2)
+2026-03-10T14:05:52.250Z [info] 'OPCUA' created
+2026-03-10T14:05:52.253Z [info] 'FUXA Server' start
+2026-03-10T14:05:52.253Z [info] 'OPCUA' start
+2026-03-10T14:05:52.254Z [info] alarms check start
+2026-03-10T14:05:52.254Z [info] notificator check start
+2026-03-10T14:05:52.254Z [info] scripts.start-checkstatus
+2026-03-10T14:05:52.254Z [info] jobs check start
+2026-03-10T14:05:52.259Z [info] FUXA started!
+2026-03-10T14:05:52.265Z [info] WebServer is running http://127.0.0.1:1881/
+2026-03-10T14:05:52.266Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260304090037.db' database
+2026-03-10T14:05:52.266Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260310150549.db' database
+2026-03-10T14:05:52.266Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-10T14:05:52.267Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260304090038.db' database
+2026-03-10T14:05:52.267Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-10T14:05:52.267Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260310150552.db' database
+2026-03-10T14:05:52.284Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260304090037.db'
+2026-03-10T14:05:52.285Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-10T14:05:52.286Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260304090038.db'
+2026-03-10T14:05:52.289Z [info] 'FUXA Server' restored 0/0 values
+2026-03-10T14:05:52.290Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-10T14:05:52.311Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260310150549.db' database
+2026-03-10T14:05:52.312Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-03-10T14:05:52.312Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260310150552.db' database
+2026-03-10T14:05:52.312Z [info] daqstorage.load-map successful! '0'
+2026-03-10T14:05:52.313Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260304090038.db' database deleted!
+2026-03-10T14:05:52.314Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260304090037.db' database deleted!
+2026-03-10T14:05:52.735Z [info] 'OPCUA' connection
+2026-03-10T14:05:52.753Z [info] 'OPCUA' connected!
+2026-03-10T14:05:52.761Z [info] 'OPCUA' restored 0/0 values
+2026-03-10T14:05:52.776Z [info] 'OPCUA' subscription created!
+2026-03-10T14:05:53.263Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-03-10T14:05:53.265Z [info] alarms.alarmstorage-init-successful!
+2026-03-10T14:06:06.743Z [info] socket.io client connected Z9UF129NEhC2O9pLAAAC
+2026-03-10T14:07:09.214Z [info] 'MQTT' data loaded (0)
+2026-03-10T14:07:09.215Z [info] 'MQTT' created
+2026-03-10T14:07:09.217Z [info] 'MQTT' start
+2026-03-10T14:07:09.217Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:07:09.218Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260310150709.db' database
+2026-03-10T14:07:09.218Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-10T14:07:09.218Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260304105547.db' database
+2026-03-10T14:07:09.249Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-10T14:07:09.249Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260304105547.db'
+2026-03-10T14:07:09.251Z [info] 'MQTT' connected!
+2026-03-10T14:07:09.251Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-03-10T14:07:09.251Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260310150709.db' database
+2026-03-10T14:07:09.252Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:07:09.253Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260304105547.db' database deleted!
+2026-03-10T14:07:49.356Z [info] 'MQTT' stop
+2026-03-10T14:07:49.359Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:07:49.360Z [info] 'MQTT' exist
+2026-03-10T14:07:49.360Z [info] 'MQTT' data loaded (0)
+2026-03-10T14:07:49.360Z [info] 'MQTT' start
+2026-03-10T14:07:49.361Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:07:49.364Z [info] 'MQTT' connected!
+2026-03-10T14:07:49.365Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:08:16.434Z [info] 'MQTT' stop
+2026-03-10T14:08:16.439Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:08:16.440Z [info] 'MQTT' exist
+2026-03-10T14:08:16.440Z [info] 'MQTT' data loaded (1)
+2026-03-10T14:08:16.440Z [info] 'MQTT' start
+2026-03-10T14:08:16.440Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:08:16.443Z [info] 'MQTT' connected!
+2026-03-10T14:08:16.446Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:08:18.448Z [info] 'MQTT' stop
+2026-03-10T14:08:18.450Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:08:18.451Z [info] 'MQTT' exist
+2026-03-10T14:08:18.451Z [info] 'MQTT' data loaded (2)
+2026-03-10T14:08:18.452Z [info] 'MQTT' start
+2026-03-10T14:08:18.452Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:08:18.456Z [info] 'MQTT' connected!
+2026-03-10T14:08:18.459Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:08:29.022Z [info] 'MQTT' stop
+2026-03-10T14:08:29.023Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:08:29.024Z [info] 'MQTT' exist
+2026-03-10T14:08:29.024Z [info] 'MQTT' data loaded (4)
+2026-03-10T14:08:29.024Z [info] 'MQTT' start
+2026-03-10T14:08:29.024Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:08:29.029Z [info] 'MQTT' connected!
+2026-03-10T14:08:29.032Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:08:35.285Z [info] 'MQTT' stop
+2026-03-10T14:08:35.286Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:08:35.286Z [info] 'MQTT' exist
+2026-03-10T14:08:35.286Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:08:35.287Z [info] 'MQTT' start
+2026-03-10T14:08:35.287Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:08:35.288Z [info] 'MQTT' connected!
+2026-03-10T14:08:35.289Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:09:43.938Z [info] socket.io client connected iIUUOuSVpDuXS7s4AAAF
+2026-03-10T14:10:15.178Z [info] 'MQTT' stop
+2026-03-10T14:10:15.179Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:10:15.181Z [info] 'MQTT' exist
+2026-03-10T14:10:15.181Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:10:18.134Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:10:18.136Z [info] 'MQTT' created
+2026-03-10T14:10:18.136Z [info] 'MQTT' start
+2026-03-10T14:10:18.136Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:10:18.144Z [info] 'MQTT' connected!
+2026-03-10T14:10:18.147Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:10:28.450Z [info] 'MQTT' stop
+2026-03-10T14:10:28.451Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:10:28.451Z [info] 'MQTT' exist
+2026-03-10T14:10:28.452Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:10:28.452Z [info] 'MQTT' start
+2026-03-10T14:10:28.452Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:10:28.455Z [info] 'MQTT' connected!
+2026-03-10T14:10:28.457Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:11:10.015Z [info] socket.io client connected EgzaGNXlh5kcthAtAAAI
+2026-03-10T14:16:33.318Z [info] 'MQTT' stop
+2026-03-10T14:16:33.322Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:16:33.323Z [info] 'MQTT' exist
+2026-03-10T14:16:33.323Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:16:33.323Z [info] 'MQTT' start
+2026-03-10T14:16:33.323Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:16:33.328Z [info] 'MQTT' connected!
+2026-03-10T14:16:33.329Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:16:39.973Z [info] socket.io client connected u5XM9iQSw5o380RJAAAL
+2026-03-10T14:17:05.929Z [info] 'MQTT' stop
+2026-03-10T14:17:05.931Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:17:05.932Z [info] 'MQTT' exist
+2026-03-10T14:17:05.932Z [info] 'MQTT' data loaded (3)
+2026-03-10T14:17:05.932Z [info] 'MQTT' start
+2026-03-10T14:17:05.932Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:17:05.937Z [info] 'MQTT' connected!
+2026-03-10T14:17:05.943Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:17:08.771Z [info] socket.io client connected e89BLYOznoZHxj6eAAAO
+2026-03-10T14:31:28.616Z [info] 'MQTT' stop
+2026-03-10T14:31:28.618Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-10T14:31:28.620Z [info] 'MQTT' exist
+2026-03-10T14:31:28.620Z [info] 'MQTT' data loaded (4)
+2026-03-10T14:31:28.621Z [info] 'MQTT' start
+2026-03-10T14:31:28.621Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-10T14:31:28.626Z [info] 'MQTT' connected!
+2026-03-10T14:31:28.628Z [info] 'MQTT' restored 0/0 values
+2026-03-10T14:32:23.593Z [info] socket.io client connected p11F5z5e5j7IPhbTAAAR
+2026-03-10T14:33:08.023Z [info] socket.io client connected 60cHt0LzNTFB7u4XAAAU
+2026-03-10T21:56:51.246Z [info] socket.io client connected T_o5fR60W0k2hkgZAAAW
+2026-03-10T22:13:18.173Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T22:13:18.179Z [warn] 'OPCUA' Warning => Session closed
+2026-03-10T22:13:23.427Z [info] 'OPCUA' connection
+2026-03-10T22:13:23.438Z [info] 'OPCUA' connected!
+2026-03-10T22:13:23.440Z [info] 'OPCUA' restored 0/0 values
+2026-03-10T22:13:23.443Z [info] 'OPCUA' subscription created!
+2026-03-10T22:23:04.831Z [info] socket.io client connected BKokYVyN6HoSfjXKAAAY
+2026-03-10T22:40:20.292Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T22:40:20.296Z [warn] 'OPCUA' Warning => Session closed
+2026-03-10T22:40:21.296Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:21.296Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:22.290Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:22.291Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T22:40:28.138Z [info] 'OPCUA' connection
+2026-03-10T22:40:28.145Z [info] 'OPCUA' connected!
+2026-03-10T22:40:28.147Z [info] 'OPCUA' subscription created!
+2026-03-10T22:40:28.148Z [info] 'OPCUA' restored 0/0 values
+2026-03-10T23:01:34.206Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T23:01:34.212Z [warn] 'OPCUA' Warning => Session closed
+2026-03-10T23:01:34.618Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:34.619Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:35.619Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:35.619Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:36.621Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:36.621Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:37.623Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:37.623Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:01:43.259Z [info] 'OPCUA' connection
+2026-03-10T23:01:43.262Z [info] 'OPCUA' connected!
+2026-03-10T23:01:43.264Z [info] 'OPCUA' restored 0/0 values
+2026-03-10T23:01:43.267Z [info] 'OPCUA' subscription created!
+2026-03-10T23:59:00.623Z [error] 'OPCUA' session keepalive failure!
+2026-03-10T23:59:00.630Z [warn] 'OPCUA' Warning => Session closed
+2026-03-10T23:59:00.819Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:00.819Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:01.818Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:01.818Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:02.819Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:02.819Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-10T23:59:08.894Z [info] 'OPCUA' connection
+2026-03-10T23:59:08.903Z [info] 'OPCUA' connected!
+2026-03-10T23:59:08.905Z [info] 'OPCUA' restored 0/0 values
+2026-03-10T23:59:08.906Z [info] 'OPCUA' subscription created!
+2026-03-11T00:14:53.917Z [info] daqstorage.checkRetention processed
+2026-03-11T00:15:17.436Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T00:15:17.437Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T00:15:18.028Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:15:18.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:15:23.917Z [info] 'OPCUA' connection
+2026-03-11T00:15:23.921Z [info] 'OPCUA' connected!
+2026-03-11T00:15:23.922Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T00:15:23.923Z [info] 'OPCUA' subscription created!
+2026-03-11T00:24:25.804Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T00:24:25.807Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T00:24:26.029Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:26.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:27.031Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:27.031Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T00:24:32.844Z [info] 'OPCUA' connection
+2026-03-11T00:24:32.850Z [info] 'OPCUA' connected!
+2026-03-11T00:24:32.851Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T00:24:32.852Z [info] 'OPCUA' subscription created!
+2026-03-11T00:40:47.335Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T00:40:47.338Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T00:55:52.705Z [info] 'OPCUA' connection
+2026-03-11T00:55:52.716Z [info] 'OPCUA' connected!
+2026-03-11T00:55:52.720Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T00:55:52.722Z [info] 'OPCUA' subscription created!
+2026-03-11T01:12:00.732Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:12:00.735Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T01:12:00.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:00.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:01.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:01.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T01:12:07.702Z [info] 'OPCUA' connection
+2026-03-11T01:12:07.705Z [info] 'OPCUA' connected!
+2026-03-11T01:12:07.705Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T01:12:07.707Z [info] 'OPCUA' subscription created!
+2026-03-11T01:27:46.505Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:27:46.507Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T01:27:52.010Z [info] 'OPCUA' connection
+2026-03-11T01:27:52.016Z [info] 'OPCUA' connected!
+2026-03-11T01:27:52.017Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T01:27:52.019Z [info] 'OPCUA' subscription created!
+2026-03-11T01:43:31.425Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:43:31.427Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T01:43:36.940Z [info] 'OPCUA' connection
+2026-03-11T01:43:36.946Z [info] 'OPCUA' connected!
+2026-03-11T01:43:36.947Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T01:43:36.949Z [info] 'OPCUA' subscription created!
+2026-03-11T01:59:45.899Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T01:59:45.901Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T01:59:46.012Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T01:59:46.013Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T01:59:51.906Z [info] 'OPCUA' connection
+2026-03-11T01:59:51.910Z [info] 'OPCUA' connected!
+2026-03-11T01:59:51.911Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T01:59:51.912Z [info] 'OPCUA' subscription created!
+2026-03-11T02:17:29.744Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T02:17:29.746Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T02:17:29.943Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:29.943Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:30.944Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:30.944Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:17:36.793Z [info] 'OPCUA' connection
+2026-03-11T02:17:36.797Z [info] 'OPCUA' connected!
+2026-03-11T02:17:36.798Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T02:17:36.799Z [info] 'OPCUA' subscription created!
+2026-03-11T02:33:15.752Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T02:33:15.755Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T02:33:15.798Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T02:33:15.799Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T02:33:21.766Z [info] 'OPCUA' connection
+2026-03-11T02:33:21.774Z [info] 'OPCUA' connected!
+2026-03-11T02:33:21.775Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T02:33:21.776Z [info] 'OPCUA' subscription created!
+2026-03-11T02:49:06.359Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T02:49:06.362Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T02:49:11.860Z [info] 'OPCUA' connection
+2026-03-11T02:49:11.866Z [info] 'OPCUA' connected!
+2026-03-11T02:49:11.867Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T02:49:11.868Z [info] 'OPCUA' subscription created!
+2026-03-11T03:04:51.404Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:04:51.406Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T03:04:56.902Z [info] 'OPCUA' connection
+2026-03-11T03:04:56.911Z [info] 'OPCUA' connected!
+2026-03-11T03:04:56.911Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T03:04:56.913Z [info] 'OPCUA' subscription created!
+2026-03-11T03:20:35.869Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:20:35.874Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T03:20:35.906Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:20:35.906Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:20:41.858Z [info] 'OPCUA' connection
+2026-03-11T03:20:41.866Z [info] 'OPCUA' connected!
+2026-03-11T03:20:41.867Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T03:20:41.869Z [info] 'OPCUA' subscription created!
+2026-03-11T03:36:49.879Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:36:49.881Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T03:36:49.937Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:49.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:50.937Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:50.937Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:36:56.872Z [info] 'OPCUA' connection
+2026-03-11T03:36:56.876Z [info] 'OPCUA' connected!
+2026-03-11T03:36:56.877Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T03:36:56.878Z [info] 'OPCUA' subscription created!
+2026-03-11T03:54:32.796Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T03:54:32.798Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T03:54:32.969Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:32.969Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:33.969Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:33.970Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T03:54:39.828Z [info] 'OPCUA' connection
+2026-03-11T03:54:39.831Z [info] 'OPCUA' connected!
+2026-03-11T03:54:39.832Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T03:54:39.833Z [info] 'OPCUA' subscription created!
+2026-03-11T04:08:41.639Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:08:41.645Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T04:08:47.104Z [info] 'OPCUA' connection
+2026-03-11T04:08:47.109Z [info] 'OPCUA' connected!
+2026-03-11T04:08:47.110Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T04:08:47.114Z [info] 'OPCUA' subscription created!
+2026-03-11T04:22:06.249Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:22:06.251Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T04:22:11.738Z [info] 'OPCUA' connection
+2026-03-11T04:22:11.741Z [info] 'OPCUA' connected!
+2026-03-11T04:22:11.742Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T04:22:11.743Z [info] 'OPCUA' subscription created!
+2026-03-11T04:37:51.798Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:37:51.799Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T04:37:51.836Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:51.836Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:52.837Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:52.837Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:53.838Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:53.839Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:54.839Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:54.839Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:55.869Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:37:55.869Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:38:01.834Z [info] 'OPCUA' connection
+2026-03-11T04:38:01.839Z [info] 'OPCUA' connected!
+2026-03-11T04:38:01.840Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T04:38:01.841Z [info] 'OPCUA' subscription created!
+2026-03-11T04:53:41.733Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T04:53:41.741Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T04:53:41.781Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:41.781Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:42.781Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:42.781Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:43.784Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:43.784Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:44.783Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:44.783Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:45.786Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:45.787Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T04:53:51.750Z [info] 'OPCUA' connection
+2026-03-11T04:53:51.754Z [info] 'OPCUA' connected!
+2026-03-11T04:53:51.757Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T04:53:51.758Z [info] 'OPCUA' subscription created!
+2026-03-11T05:09:01.659Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:09:01.661Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T05:09:01.681Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:01.681Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:02.682Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:02.683Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:03.684Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:03.685Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:04.686Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:04.686Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:05.687Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:05.687Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:09:11.640Z [info] 'OPCUA' connection
+2026-03-11T05:09:11.643Z [info] 'OPCUA' connected!
+2026-03-11T05:09:11.644Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T05:09:11.646Z [info] 'OPCUA' subscription created!
+2026-03-11T05:27:20.045Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:27:20.049Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T05:27:20.796Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:27:20.796Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:27:26.602Z [info] 'OPCUA' connection
+2026-03-11T05:27:26.607Z [info] 'OPCUA' connected!
+2026-03-11T05:27:26.608Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T05:27:26.609Z [info] 'OPCUA' subscription created!
+2026-03-11T05:43:05.978Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:43:05.979Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T05:43:11.479Z [info] 'OPCUA' connection
+2026-03-11T05:43:11.482Z [info] 'OPCUA' connected!
+2026-03-11T05:43:11.483Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T05:43:11.484Z [info] 'OPCUA' subscription created!
+2026-03-11T05:59:19.436Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T05:59:19.438Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T05:59:19.556Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:19.556Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:20.557Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T05:59:20.557Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:14:26.470Z [info] 'OPCUA' connection
+2026-03-11T06:14:26.475Z [info] 'OPCUA' connected!
+2026-03-11T06:14:26.478Z [info] 'OPCUA' subscription created!
+2026-03-11T06:14:26.479Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T06:23:02.612Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:23:02.617Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T06:23:03.234Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:23:03.234Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:23:09.107Z [info] 'OPCUA' connection
+2026-03-11T06:23:09.113Z [info] 'OPCUA' connected!
+2026-03-11T06:23:09.114Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T06:23:09.116Z [info] 'OPCUA' subscription created!
+2026-03-11T06:38:48.531Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:38:48.533Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T06:38:53.974Z [info] 'OPCUA' connection
+2026-03-11T06:38:53.978Z [info] 'OPCUA' connected!
+2026-03-11T06:38:53.979Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T06:38:53.980Z [info] 'OPCUA' subscription created!
+2026-03-11T06:54:33.946Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T06:54:33.948Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T06:54:33.982Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:33.982Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:34.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:34.985Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:35.983Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:35.983Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:36.989Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:36.990Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:37.987Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:37.987Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T06:54:43.945Z [info] 'OPCUA' connection
+2026-03-11T06:54:43.949Z [info] 'OPCUA' connected!
+2026-03-11T06:54:43.950Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T06:54:43.951Z [info] 'OPCUA' subscription created!
+2026-03-11T07:12:51.727Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:12:51.729Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T07:12:52.002Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:52.002Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:53.004Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:53.004Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:12:58.823Z [info] 'OPCUA' connection
+2026-03-11T07:12:58.826Z [info] 'OPCUA' connected!
+2026-03-11T07:12:58.827Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T07:12:58.827Z [info] 'OPCUA' subscription created!
+2026-03-11T07:19:50.879Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:19:50.882Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T07:19:51.400Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:19:51.400Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:19:57.317Z [info] 'OPCUA' connection
+2026-03-11T07:19:57.328Z [info] 'OPCUA' connected!
+2026-03-11T07:19:57.330Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T07:19:57.331Z [info] 'OPCUA' subscription created!
+2026-03-11T07:21:37.391Z [info] socket.io client connected uhgTVwhXEgqRLObeAAAa
+2026-03-11T07:31:43.471Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:31:43.473Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T07:31:44.339Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:31:44.339Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:31:50.353Z [info] 'OPCUA' connection
+2026-03-11T07:31:50.358Z [info] 'OPCUA' connected!
+2026-03-11T07:31:50.360Z [info] 'OPCUA' subscription created!
+2026-03-11T07:31:50.360Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T07:41:24.540Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:41:24.552Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T07:41:25.107Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:25.108Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:26.109Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:26.110Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:41:31.870Z [info] 'OPCUA' connection
+2026-03-11T07:41:31.876Z [info] 'OPCUA' connected!
+2026-03-11T07:41:31.877Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T07:41:31.879Z [info] 'OPCUA' subscription created!
+2026-03-11T07:44:17.321Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T07:44:17.351Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T07:44:18.340Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:18.341Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:19.341Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:19.341Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:20.345Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:20.348Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:21.350Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:21.351Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T07:44:27.652Z [info] 'OPCUA' connection
+2026-03-11T07:44:27.665Z [info] 'OPCUA' connected!
+2026-03-11T07:44:27.673Z [info] 'OPCUA' subscription created!
+2026-03-11T07:44:27.675Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T08:00:24.798Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:00:24.816Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T08:00:24.854Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:24.856Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:25.853Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:25.854Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:00:31.089Z [info] 'OPCUA' connection
+2026-03-11T08:00:31.113Z [info] 'OPCUA' connected!
+2026-03-11T08:00:31.121Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T08:00:31.126Z [info] 'OPCUA' subscription created!
+2026-03-11T08:12:04.890Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:12:04.899Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T08:12:05.410Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:05.414Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:06.457Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:06.501Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:12:12.411Z [info] 'OPCUA' connection
+2026-03-11T08:12:12.426Z [info] 'OPCUA' connected!
+2026-03-11T08:12:12.431Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T08:12:12.527Z [info] 'OPCUA' subscription created!
+2026-03-11T08:16:05.499Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T08:16:05.683Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T08:16:06.845Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:06.857Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:08.313Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:08.495Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:09.169Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:09.199Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T08:16:17.129Z [info] 'OPCUA' connection
+2026-03-11T08:16:17.169Z [info] 'OPCUA' connected!
+2026-03-11T08:16:17.184Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T08:16:17.220Z [info] 'OPCUA' subscription created!
+2026-03-11T08:59:30.663Z [info] socket.io client connected e_a-gbB_-R0j8TAzAAAc
+2026-03-11T08:59:58.800Z [info] 'OPCUA' session keepalive
+2026-03-11T09:18:29.729Z [info] socket.io client connected ySwegG-Y0VxJ1ks2AAAf
+2026-03-11T09:21:27.673Z [info] socket.io client connected CPuN9B4bJo6jQ1fyAAAi
+2026-03-11T09:23:40.113Z [info] socket.io client connected v-i8T8T_Jl5pZEbKAAAl
+2026-03-11T09:38:14.003Z [info] socket.io client connected qQRNMLR2Rjl89RB_AAAn
+2026-03-11T09:38:14.113Z [info] socket.io client connected 1G6sxVd2uCrA0TUUAAAq
+2026-03-11T09:38:14.119Z [info] socket.io client connected b8p5OvNLrk_V4AYHAAAr
+2026-03-11T09:38:59.178Z [info] 'OPCUA' session keepalive
+2026-03-11T10:05:30.532Z [info] socket.io client connected TT426GzzsrpnGBvfAAAt
+2026-03-11T10:05:31.003Z [info] socket.io client connected Xwww_L-21VDX28E6AAAv
+2026-03-11T10:05:31.077Z [info] socket.io client connected 7lt34uJk8tZnvk1yAAAx
+2026-03-11T10:15:08.195Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:15:08.205Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T10:15:08.499Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:08.500Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:09.497Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:09.498Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:10.495Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:10.496Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:11.497Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:11.497Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:12.498Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:12.498Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:15:18.362Z [info] 'OPCUA' connection
+2026-03-11T10:15:18.422Z [info] 'OPCUA' connected!
+2026-03-11T10:15:18.440Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T10:15:18.445Z [info] 'OPCUA' subscription created!
+2026-03-11T10:23:47.935Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:23:47.944Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T10:23:47.998Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.029Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:48.985Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:49.985Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:49.986Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:50.986Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:50.987Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:51.988Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:51.989Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:23:57.732Z [info] 'OPCUA' connection
+2026-03-11T10:23:57.745Z [info] 'OPCUA' connected!
+2026-03-11T10:23:57.750Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T10:23:57.753Z [info] 'OPCUA' subscription created!
+2026-03-11T10:33:21.220Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:33:21.225Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T10:33:21.324Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:21.325Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:22.323Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:22.324Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:23.325Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:23.326Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
+2026-03-11T10:33:28.784Z [info] 'OPCUA' connection
+2026-03-11T10:33:28.794Z [info] 'OPCUA' connected!
+2026-03-11T10:33:28.798Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T10:33:28.801Z [info] 'OPCUA' subscription created!
+2026-03-11T10:35:56.322Z [error] 'OPCUA' session keepalive failure!
+2026-03-11T10:35:56.333Z [warn] 'OPCUA' Warning => Session closed
+2026-03-11T10:36:02.241Z [info] 'OPCUA' connection
+2026-03-11T10:36:02.250Z [info] 'OPCUA' connected!
+2026-03-11T10:36:02.253Z [info] 'OPCUA' restored 0/0 values
+2026-03-11T10:36:02.257Z [info] 'OPCUA' subscription created!
+2026-03-11T10:36:31.416Z [info] 'OPCUA' session keepalive
+2026-03-11T10:44:14.229Z [info] socket.io client connected nxyz2yDU2dASHugMAAA0
+2026-03-11T12:10:29.214Z [info] socket.io client connected VoPxNDnxt4zEtvlRAAA3
+2026-03-11T12:24:19.601Z [info] 'MQTT' stop
+2026-03-11T12:24:19.606Z [warn] 'MQTT' client close mqtt://mqttbroker:1883
+2026-03-11T12:24:19.608Z [info] 'MQTT' exist
+2026-03-11T12:24:19.609Z [info] 'MQTT' data loaded (3)
+2026-03-11T12:24:19.610Z [info] 'MQTT' start
+2026-03-11T12:24:19.611Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-11T12:24:19.646Z [info] 'MQTT' connected!
+2026-03-11T12:24:19.655Z [info] 'MQTT' restored 0/0 values
+2026-03-17T11:17:22.863Z [info] FUXA V.1.3.0-2710
+2026-03-17T11:17:22.866Z [info] daqstorage: init successful!
+2026-03-17T11:17:23.001Z [info] api: init successful!
+2026-03-17T11:17:23.002Z [info] plugin-installed ads-client 2.1.0
+2026-03-17T11:17:23.003Z [info] plugin-installed node-opcua 2.149.0
+2026-03-17T11:17:23.003Z [info] plugin-installed modbus-serial 8.0.19
+2026-03-17T11:17:23.003Z [info] plugin-installed node-bacnet 0.2.4
+2026-03-17T11:17:23.003Z [info] plugin-installed odbc 2.4.9
+2026-03-17T11:17:23.003Z [info] plugin-installed node-red 4.1.1
+2026-03-17T11:17:23.003Z [info] runtime init plugins successful!
+2026-03-17T11:17:23.004Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-03-17T11:17:23.005Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-03-17T11:17:23.005Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-03-17T11:17:23.005Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-03-17T11:17:23.006Z [info] currentstorage init successful!
+2026-03-17T11:17:23.007Z [info] runtime init scheduler services successful!
+2026-03-17T11:17:23.008Z [info] apikeys.apiKeysStorage-init successful!
+2026-03-17T11:17:23.008Z [info] runtime init apiKeys successful!
+2026-03-17T11:17:23.008Z [info] project.prjstorage-init-successful!
+2026-03-17T11:17:23.008Z [info] runtime init project successful!
+2026-03-17T11:17:23.008Z [info] users.usrstorage-init successful!
+2026-03-17T11:17:23.009Z [info] runtime init users successful!
+2026-03-17T11:17:23.009Z [info] FUXA init in  152ms.
+2026-03-17T11:17:23.014Z [info] daqstorage reset!
+2026-03-17T11:17:23.014Z [info] 'FUXA Server' data loaded (2)
+2026-03-17T11:17:23.014Z [info] 'FUXA Server' created
+2026-03-17T11:17:23.519Z [info] 'OPCUA' data loaded (2)
+2026-03-17T11:17:23.519Z [info] 'OPCUA' created
+2026-03-17T11:17:23.522Z [info] 'MQTT' data loaded (3)
+2026-03-17T11:17:23.522Z [info] 'MQTT' created
+2026-03-17T11:17:23.523Z [info] 'FUXA Server' start
+2026-03-17T11:17:23.524Z [info] 'OPCUA' start
+2026-03-17T11:17:23.524Z [info] 'MQTT' start
+2026-03-17T11:17:23.524Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-17T11:17:23.525Z [info] alarms check start
+2026-03-17T11:17:23.525Z [info] notificator check start
+2026-03-17T11:17:23.525Z [info] scripts.start-checkstatus
+2026-03-17T11:17:23.525Z [info] jobs check start
+2026-03-17T11:17:23.526Z [info] FUXA started!
+2026-03-17T11:17:23.533Z [info] WebServer is running http://127.0.0.1:1881/
+2026-03-17T11:17:23.533Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260310150549.db' database
+2026-03-17T11:17:23.533Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-17T11:17:23.533Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317121723.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260310150552.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317121723.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260310150709.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-17T11:17:23.534Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317121723.db' database
+2026-03-17T11:17:23.564Z [info] 'FUXA Server' restored 0/0 values
+2026-03-17T11:17:23.564Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260310150549.db'
+2026-03-17T11:17:23.564Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-17T11:17:23.564Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-17T11:17:23.564Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260310150552.db'
+2026-03-17T11:17:23.568Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260310150709.db'
+2026-03-17T11:17:23.569Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317121723.db' database
+2026-03-17T11:17:23.569Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317121723.db' database
+2026-03-17T11:17:23.571Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-17T11:17:23.572Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317121723.db' database
+2026-03-17T11:17:23.572Z [info] daqstorage.load-map successful! '0'
+2026-03-17T11:17:23.572Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-03-17T11:17:23.575Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260310150549.db' database deleted!
+2026-03-17T11:17:23.575Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260310150552.db' database deleted!
+2026-03-17T11:17:23.575Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-03-17T11:17:23.576Z [info] 'MQTT' connected!
+2026-03-17T11:17:23.578Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260310150709.db' database deleted!
+2026-03-17T11:17:23.588Z [info] 'MQTT' restored 0/0 values
+2026-03-17T11:17:23.609Z [info] 'OPCUA' connection
+2026-03-17T11:17:23.614Z [info] 'OPCUA' connected!
+2026-03-17T11:17:23.615Z [info] 'OPCUA' restored 0/0 values
+2026-03-17T11:17:23.618Z [info] 'OPCUA' subscription created!
+2026-03-17T11:17:24.492Z [info] socket.io client connected 3UvvSXBv37eatQItAAAB
+2026-03-17T11:17:24.533Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-03-17T11:17:24.534Z [info] alarms.alarmstorage-init-successful!
+2026-03-17T11:17:58.453Z [info] socket.io client connected hI8s_S8CPDttqd78AAAE
+2026-03-17T11:30:56.690Z [info] FUXA V.1.2.8-2638
+2026-03-17T11:30:56.693Z [info] daqstorage: init successful!
+2026-03-17T11:30:56.789Z [info] api: init successful!
+2026-03-17T11:30:56.791Z [info] plugin-installed ads-client 2.1.0
+2026-03-17T11:30:56.791Z [info] plugin-installed node-opcua 2.149.0
+2026-03-17T11:30:56.791Z [info] plugin-installed modbus-serial 8.0.19
+2026-03-17T11:30:56.791Z [info] plugin-installed node-bacnet 0.2.4
+2026-03-17T11:30:56.791Z [info] plugin-installed odbc 2.4.9
+2026-03-17T11:30:56.792Z [info] plugin-installed node-red 4.1.1
+2026-03-17T11:30:56.792Z [info] runtime init plugins successful!
+2026-03-17T11:30:56.792Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-03-17T11:30:56.793Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-03-17T11:30:56.793Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-03-17T11:30:56.794Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-03-17T11:30:56.795Z [info] currentstorage init successful!
+2026-03-17T11:30:56.796Z [info] apikeys.apiKeysStorage-init successful!
+2026-03-17T11:30:56.797Z [info] runtime init apiKeys successful!
+2026-03-17T11:30:56.797Z [info] runtime init scheduler services successful!
+2026-03-17T11:30:56.797Z [info] project.prjstorage-init-successful!
+2026-03-17T11:30:56.797Z [info] runtime init project successful!
+2026-03-17T11:30:56.798Z [info] users.usrstorage-init successful!
+2026-03-17T11:30:56.798Z [info] runtime init users successful!
+2026-03-17T11:30:56.798Z [info] FUXA init in  114ms.
+2026-03-17T11:30:56.802Z [info] daqstorage reset!
+2026-03-17T11:30:56.803Z [info] 'FUXA Server' data loaded (2)
+2026-03-17T11:30:56.803Z [info] 'FUXA Server' created
+2026-03-17T11:30:57.242Z [info] 'OPCUA' data loaded (2)
+2026-03-17T11:30:57.242Z [info] 'OPCUA' created
+2026-03-17T11:30:57.247Z [info] 'MQTT' data loaded (3)
+2026-03-17T11:30:57.247Z [info] 'MQTT' created
+2026-03-17T11:30:57.248Z [info] 'FUXA Server' start
+2026-03-17T11:30:57.248Z [info] 'OPCUA' start
+2026-03-17T11:30:57.248Z [info] 'MQTT' start
+2026-03-17T11:30:57.248Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-03-17T11:30:57.248Z [info] alarms check start
+2026-03-17T11:30:57.248Z [info] notificator check start
+2026-03-17T11:30:57.248Z [info] scripts.start-checkstatus
+2026-03-17T11:30:57.248Z [info] jobs check start
+2026-03-17T11:30:57.250Z [info] FUXA started!
+2026-03-17T11:30:57.336Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317121723.db' database
+2026-03-17T11:30:57.336Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317123056.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317121723.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317123057.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317121723.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-17T11:30:57.337Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317123057.db' database
+2026-03-17T11:30:57.349Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-03-17T11:30:57.349Z [info] 'FUXA Server' restored 0/0 values
+2026-03-17T11:30:57.349Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-03-17T11:30:57.349Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260317121723.db'
+2026-03-17T11:30:57.349Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317121723.db'
+2026-03-17T11:30:57.349Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317123056.db' database
+2026-03-17T11:30:57.349Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317123057.db' database
+2026-03-17T11:30:57.351Z [info] 'MQTT' connected!
+2026-03-17T11:30:57.353Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317121723.db'
+2026-03-17T11:30:57.353Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-03-17T11:30:57.353Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317123057.db' database
+2026-03-17T11:30:57.353Z [info] daqstorage.load-map successful! '0'
+2026-03-17T11:30:57.357Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-03-17T11:30:57.357Z [info] 'MQTT' restored 0/0 values
+2026-03-17T11:30:57.357Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260317121723.db' database deleted!
+2026-03-17T11:30:57.358Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317121723.db' database deleted!
+2026-03-17T11:30:57.358Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-03-17T11:30:57.358Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317121723.db' database deleted!
+2026-03-17T11:30:57.769Z [info] [Node-RED] Started at /nodered
+2026-03-17T11:30:57.775Z [info] WebServer is running http://127.0.0.1:1881/
+2026-03-17T11:30:57.804Z [info] 'OPCUA' connection
+2026-03-17T11:30:57.811Z [info] 'OPCUA' connected!
+2026-03-17T11:30:57.812Z [info] 'OPCUA' restored 0/0 values
+2026-03-17T11:30:57.814Z [info] 'OPCUA' subscription created!
+2026-03-17T11:30:58.256Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-03-17T11:30:58.257Z [info] alarms.alarmstorage-init-successful!
+2026-03-17T11:31:03.568Z [info] socket.io client connected 54c1WeGLr6udfhS5AAAB
+2026-03-17T11:31:09.552Z [info] socket.io client connected -TBrS9hmEX_R1t9mAAAE
+2026-10-30T15:19:47.043Z [info] FUXA V.1.2.8-2638
+2026-10-30T15:19:47.056Z [info] daqstorage: init successful!
+2026-10-30T15:19:47.502Z [info] api: init successful!
+2026-10-30T15:19:47.512Z [info] plugin-installed ads-client 2.1.0
+2026-10-30T15:19:47.514Z [info] plugin-installed node-opcua 2.149.0
+2026-10-30T15:19:47.514Z [info] plugin-installed modbus-serial 8.0.19
+2026-10-30T15:19:47.515Z [info] plugin-installed node-bacnet 0.2.4
+2026-10-30T15:19:47.515Z [info] plugin-installed odbc 2.4.9
+2026-10-30T15:19:47.515Z [info] plugin-installed node-red 4.1.1
+2026-10-30T15:19:47.515Z [info] runtime init plugins successful!
+2026-10-30T15:19:47.523Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-10-30T15:19:47.523Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-10-30T15:19:47.524Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-10-30T15:19:47.525Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-10-30T15:19:47.543Z [info] apikeys.apiKeysStorage-init successful!
+2026-10-30T15:19:47.544Z [info] runtime init apiKeys successful!
+2026-10-30T15:19:47.545Z [info] currentstorage init successful!
+2026-10-30T15:19:47.550Z [info] runtime init scheduler services successful!
+2026-10-30T15:19:47.553Z [info] users.usrstorage-init successful!
+2026-10-30T15:19:47.555Z [info] runtime init users successful!
+2026-10-30T15:19:47.592Z [info] project.prjstorage-init-successful!
+2026-10-30T15:19:47.593Z [info] runtime init project successful!
+2026-10-30T15:19:47.594Z [info] FUXA init in  592ms.
+2026-10-30T15:19:47.659Z [info] daqstorage reset!
+2026-10-30T15:19:47.662Z [info] 'FUXA Server' data loaded (2)
+2026-10-30T15:19:47.662Z [info] 'FUXA Server' created
+2026-10-30T15:19:49.694Z [info] 'OPCUA' data loaded (2)
+2026-10-30T15:19:49.695Z [info] 'OPCUA' created
+2026-10-30T15:19:49.707Z [info] 'MQTT' data loaded (3)
+2026-10-30T15:19:49.708Z [info] 'MQTT' created
+2026-10-30T15:19:49.721Z [info] 'FUXA Server' start
+2026-10-30T15:19:49.722Z [info] 'OPCUA' start
+2026-10-30T15:19:49.723Z [info] 'MQTT' start
+2026-10-30T15:19:49.724Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-10-30T15:19:49.726Z [info] alarms check start
+2026-10-30T15:19:49.726Z [info] notificator check start
+2026-10-30T15:19:49.727Z [info] scripts.start-checkstatus
+2026-10-30T15:19:49.727Z [info] jobs check start
+2026-10-30T15:19:49.735Z [info] FUXA started!
+2026-10-30T15:19:50.268Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261030161947.db' database
+2026-10-30T15:19:50.269Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20260317123056.db' database
+2026-10-30T15:19:50.269Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-10-30T15:19:50.270Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261030161949.db' database
+2026-10-30T15:19:50.270Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317123057.db' database
+2026-10-30T15:19:50.270Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-10-30T15:19:50.271Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317123057.db' database
+2026-10-30T15:19:50.271Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261030161949.db' database
+2026-10-30T15:19:50.271Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-10-30T15:19:50.349Z [info] 'FUXA Server' restored 0/0 values
+2026-10-30T15:19:50.350Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260317123056.db'
+2026-10-30T15:19:50.351Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-10-30T15:19:50.351Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317123057.db'
+2026-10-30T15:19:50.352Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-10-30T15:19:50.353Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317123057.db'
+2026-10-30T15:19:50.356Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261030161947.db' database
+2026-10-30T15:19:50.356Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261030161949.db' database
+2026-10-30T15:19:50.356Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261030161949.db' database
+2026-10-30T15:19:50.358Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-10-30T15:19:50.366Z [info] 'MQTT' connected!
+2026-10-30T15:19:50.371Z [info] daqstorage.load-map successful! '0'
+2026-10-30T15:19:50.393Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-10-30T15:19:50.398Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20260317123056.db' database deleted!
+2026-10-30T15:19:50.405Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20260317123057.db' database deleted!
+2026-10-30T15:19:50.410Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20260317123057.db' database deleted!
+2026-10-30T15:19:50.411Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-10-30T15:19:50.416Z [info] 'MQTT' restored 0/0 values
+2026-10-30T15:19:50.749Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-10-30T15:19:50.767Z [info] alarms.alarmstorage-init-successful!
+2026-10-30T15:19:52.056Z [info] [Node-RED] Started at /nodered
+2026-10-30T15:19:52.060Z [info] WebServer is running http://127.0.0.1:1881/
+2026-10-30T15:19:52.098Z [info] 'OPCUA' connection
+2026-10-30T15:19:52.115Z [info] 'OPCUA' connected!
+2026-10-30T15:19:52.130Z [info] 'OPCUA' subscription created!
+2026-10-30T15:19:52.134Z [info] 'OPCUA' restored 0/0 values
+2026-10-30T15:19:57.188Z [info] socket.io client connected oYocY2OLaUXscOHOAAAC
