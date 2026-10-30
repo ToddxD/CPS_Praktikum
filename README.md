@@ -1,12 +1,7 @@
 # CPS Praktikum
 
 ## Setup
-Python Umgebung einrichten (z.B. Conda)
-```shell
-conda activate -n cps python=3.12.1
-
-pip install -r python/requirements.txt
-```
+Container Tools für VS Code installieren
 
 ## Container starten
 
