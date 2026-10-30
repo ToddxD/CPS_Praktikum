@@ -250,3 +250,11 @@
 2026-03-11T10:33:23.325Z [error] 'ns=2;s=Setpoint' _startMonitor Error: expecting a valid session here
 2026-03-11T10:33:23.326Z [error] 'ns=2;s=ActualTemp' _startMonitor Error: expecting a valid session here
 2026-03-11T10:35:56.322Z [error] 'OPCUA' session keepalive failure!
+2026-10-30T16:46:09.662Z [error] 'OPCUA' retry to connect! 0
+2026-10-30T16:46:09.679Z [error] 'OPCUA' connect failure! Error: The connection cannot be established with server opc.tcp://opcua_server:4840 .
+Please check that the server is up and running or your network configuration.
+Err = (connect ECONNREFUSED 172.18.0.9:4840)
+2026-10-30T16:46:09.680Z [error] 'OPCUA' try to connect error! Error: The connection cannot be established with server opc.tcp://opcua_server:4840 .
+Please check that the server is up and running or your network configuration.
+Err = (connect ECONNREFUSED 172.18.0.9:4840)
+2026-10-30T16:46:09.680Z [error] 'OPCUA' connect error! undefined (0)
