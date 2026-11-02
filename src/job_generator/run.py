@@ -2,6 +2,7 @@ import json
 import random
 import datetime
 import sys
+import os
 
 from mqtt.mqtt_wrapper import MQTTWrapper
 
@@ -11,12 +12,20 @@ TICK_TOPIC = "tickgen/tick"
 JOBS_TOPIC = "jobs"
 state = "normal"
 
+# Get Name from Docker container
+client_name = os.environ.get("HOSTNAME", "job_generator_default")
+
+# Neues Topic, um den aktuellen Status dieses Generators zu veröffentlichen
+STATUS_TOPIC = f"generator/status"
+
 def generate_job(timestamp):
     global job_id
     job_id += 1
     release_time = datetime.datetime.fromisoformat(timestamp)
+    unique_job_id = f"{client_name}_{job_id}"
+    
     return {
-        "job_id": job_id,
+        "job_id": unique_job_id,
         "job_type": random.choice(job_types),
         "release_time": timestamp,
         "deadline": (release_time + datetime.timedelta(hours=2)).isoformat(),
@@ -33,7 +42,17 @@ def on_message_tick(client, userdata, msg):
     global state
     timestamp = msg.payload.decode("utf-8")
 
-    print(state, flush=True)
+    print(f"[{client_name}] State: {state}", flush=True)
+    
+    # Zustand und Zeitstempel als Status-Nachricht veröffentlichen
+    status_payload = {
+        "generator": client_name,
+        "state": state,
+        "timestamp": timestamp
+    }
+    client.publish(STATUS_TOPIC, json.dumps(status_payload))
+
+    # Jobs basierend auf dem aktuellen Zustand generieren und publishen
     match state:
         case "normal":
             publish_jobs(random.randint(0, 1), timestamp, client)
@@ -51,7 +70,7 @@ def on_message_tick(client, userdata, msg):
 
 
 def main():
-    mqtt = MQTTWrapper('mqttbroker', 1883, name='job_generator')
+    mqtt = MQTTWrapper('mqttbroker', 1883, name=client_name)
     mqtt.subscribe(TICK_TOPIC)
     mqtt.subscribe_with_callback(TICK_TOPIC, on_message_tick)
     try:

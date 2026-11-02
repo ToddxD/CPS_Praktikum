@@ -258,3 +258,4 @@ Err = (connect ECONNREFUSED 172.18.0.9:4840)
 Please check that the server is up and running or your network configuration.
 Err = (connect ECONNREFUSED 172.18.0.9:4840)
 2026-10-30T16:46:09.680Z [error] 'OPCUA' connect error! undefined (0)
+2026-11-02T10:24:29.742Z [error] 'MQTT' connect error! Error: Invalid topic generator/#/status (0)

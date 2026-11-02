@@ -1,8 +1,11 @@
 import json
 import sys
 import datetime
+import logging
+from datetime import datetime, timedelta
+from mqtt.mqtt_wrapper import MQTTWrapper
 
-JOBS_TOPIC_WILDCARD = "jobs/#"  # Deckt mehrere Generatoren ab (z.B. generator1/jobs, generator2/jobs oder einfach jobs/#)
+JOBS_TOPIC = "jobs"  # Deckt mehrere Generatoren ab (z.B. generator1/jobs, generator2/jobs oder einfach jobs/#)
 TICK_TOPIC = "tickgen/tick"
 STATS_TOPIC = "sink/stats"
 
@@ -56,11 +59,11 @@ def main():
     mqtt = MQTTWrapper('mqttbroker', 1883, name='job_sink')
 
     # Abonnieren der Topics
-    mqtt.subscribe(JOBS_TOPIC_WILDCARD)
+    mqtt.subscribe(JOBS_TOPIC)
     mqtt.subscribe(TICK_TOPIC)
 
     # Callbacks registrieren
-    mqtt.subscribe_with_callback(JOBS_TOPIC_WILDCARD, on_message_job)
+    mqtt.subscribe_with_callback(JOBS_TOPIC, on_message_job)
     mqtt.subscribe_with_callback(TICK_TOPIC, on_message_tick)
 
     try:

@@ -100,6 +100,16 @@ services:
       depends_on:
         - mqttbroker
 
+  job_generator_2:
+      build:
+        context: ./src/job_generator
+        dockerfile: Dockerfile
+      image: job_generator:0.1
+      container_name: job_generator_2
+      restart: unless-stopped
+      depends_on:
+        - mqttbroker
+
   sink_mqtt:
     build:
       context: ./src/sink_mqtt
