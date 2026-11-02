@@ -99,3 +99,13 @@ services:
       restart: unless-stopped
       depends_on:
         - mqttbroker
+
+  sink_mqtt:
+    build:
+      context: ./src/sink_mqtt
+      dockerfile: Dockerfile
+    image: sink_mqtt:0.1
+    container_name: sink_mqtt
+    restart: unless-stopped
+    depends_on:
+      - mqttbroker
