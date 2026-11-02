@@ -12,6 +12,11 @@ TICK_TOPIC = "tickgen/tick"
 JOBS_TOPIC = "jobs"
 state = "normal"
 
+PROBABILITY_NORMAL = 0.05
+PROBABILITY_BURST = 0.05
+PROBABILITY_MASS_ORDER = 0.05
+
+
 # Get Name from Docker container
 client_name = os.environ.get("HOSTNAME", "job_generator_default")
 
@@ -56,13 +61,13 @@ def on_message_tick(client, userdata, msg):
     match state:
         case "normal":
             publish_jobs(random.randint(0, 1), timestamp, client)
-            if random.random() < 0.1:
+            if random.random() < PROBABILITY_BURST:
                 state = "burst"
-            elif random.random() < 0.4:
+            elif random.random() < PROBABILITY_BURST + PROBABILITY_MASS_ORDER:
                 state = "mass_order"
         case "burst":
             publish_jobs(random.randint(1, 3), timestamp, client)
-            if random.random() < 0.1:
+            if random.random() < PROBABILITY_NORMAL:
                 state = "normal"
         case "mass_order":
             publish_jobs(random.randint(7, 14), timestamp, client)
