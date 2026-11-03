@@ -12,7 +12,7 @@ speed_factor = 10
 
 def on_message_speedfactor(client, userdata, msg):
     global speed_factor
-    new_speed_factor = float(msg.payload.decode("utf-8"))
+    new_speed_factor = float(msg.payload.decode("utf-8"))  
     if new_speed_factor >= 0.1:
         speed_factor = new_speed_factor
 
