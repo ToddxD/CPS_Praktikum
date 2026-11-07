@@ -8,7 +8,6 @@ from mqtt.mqtt_wrapper import MQTTWrapper
 
 TICK_TOPIC = "tickgen/tick"
 JOBS_TOPIC = "generator/jobs"
-STATUS_TOPIC = "generator/status"
 STATE_TOPIC = "fuxa/generator/state"
 
 job_id = 0
@@ -17,10 +16,6 @@ state = "normal"
 tick_counter = 0
 job_randomness = 0
 client_name = os.environ.get("GENERATOR_NAME", "gen_no_name")
-
-PROBABILITY_NORMAL = 0.05
-PROBABILITY_BURST = 0.05
-PROBABILITY_MASS_ORDER = 0.05
 
 def generate_job(timestamp):
     global job_id
