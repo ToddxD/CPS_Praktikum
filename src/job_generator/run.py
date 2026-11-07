@@ -59,16 +59,16 @@ def on_message_tick(client, userdata, msg):
 
     match state:
         case "normal":
-            if (tick_counter % 60) == 0:
-                job_randomness = random.randint(-10, 10)
+            if (tick_counter % 15) == 0:
+                job_randomness = random.randint(-3, 3)
                 publish_jobs(random.randint(0, 1), timestamp, client)
         case "burst":
-            if (tick_counter % 30) == 0:
-                job_randomness = random.randint(-10, 10)
+            if (tick_counter % 3) == 0:
+                job_randomness = random.randint(-2, 2)
                 publish_jobs(random.randint(1, 3), timestamp, client)
         case "max":
-            if (tick_counter % 20) == 0:
-                job_randomness = random.randint(-5, 5)
+            if (tick_counter % 2) == 0:
+                job_randomness = random.randint(-1, 1)
                 publish_jobs(random.randint(2, 4), timestamp, client)
 
 
