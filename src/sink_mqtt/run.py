@@ -5,7 +5,7 @@ import logging
 from datetime import datetime, timedelta
 from mqtt.mqtt_wrapper import MQTTWrapper
 
-JOBS_TOPIC = "jobs"  # Deckt mehrere Generatoren ab (z.B. generator1/jobs, generator2/jobs oder einfach jobs/#)
+JOBS_TOPIC = "generator/jobs"  # Deckt mehrere Generatoren ab (z.B. generator1/jobs, generator2/jobs oder einfach jobs/#)
 TICK_TOPIC = "tickgen/tick"
 STATS_TOPIC = "sink/stats"
 
