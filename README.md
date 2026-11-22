@@ -58,10 +58,29 @@ Alle Komponenten laufen als Docker-Container und werden über `docker-compose` g
 Objects/
 ├─ Ticker/
 │  └─ Tick          (Boolean)   – Takt-Signal; von tick_gen beschrieben
-└─ Thermostat/
-   ├─ Setpoint      (Double)    – Solltemperatur in °C; von FUXA setzbar
-   └─ ActualTemp    (Double)    – Isttemperatur in °C; von chaos_sensor berechnet
+├─ Enumeration/
+│  ├─ Stufen/EnumStrings        – Preheating, Printing, Cooling
+│  └─ JobTyp/EnumStrings        – 1, 2, 3, 4
+└─ Types/
+   ├─ FDMType
+   │  ├─ Zustand                   (Int32)
+   │  ├─ aktuellerJob/             – jobId, JobTyp, releaseTime, deadline
+   │  ├─ startzeit, endzeit        (DateTime)
+   │  ├─ aktuelleStufe/            – Art, Power, Duration
+   │  ├─ VerfuegbareLeistung       (Double)
+   │  └─ JobHinzufuegen            (Method)
+   ├─ Machine1Type
+   ├─ Machine2Type
+   └─ Machine3Type
 ```
+
+`JobType` und `StufeType` sind als wiederverwendbare OPC-UA-Objekttypen
+angelegt. Der benutzerdefinierte Referenztyp `checksFor` verbindet die
+entsprechenden Modellknoten. `HasTypeDefinition` ist eine Standardreferenz
+und wird von OPC-UA-Clients beim Instanziieren verwendet.
+Konkrete FDM-, Job-, Stufen- und Maschinenobjekte werden nicht vom Server
+angelegt; OPC-UA-Clients instanziieren sie bei Bedarf aus den bereitgestellten
+Typen.
 
 **Namespace URI:** `http://haw-hamburg.de/cps`
 **Namespace Index:** `ns=2`
