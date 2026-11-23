@@ -6507,3 +6507,155 @@ Err = (connect ECONNREFUSED 172.18.0.4:4840)
 2026-11-23T13:18:08.871Z [info] socket.io client connected uJFT61KRfUIvOHKdAAAU
 2026-11-23T13:19:02.558Z [info] socket.io client connected ptLSARRSjtftZe6TAAAX
 2026-11-23T13:24:21.424Z [info] socket.io client connected UQdiMitdbzbTPL4kAAAa
+2026-11-23T13:28:53.974Z [info] FUXA V.1.2.8-2638
+2026-11-23T13:28:53.981Z [info] daqstorage: init successful!
+2026-11-23T13:28:54.175Z [info] api: init successful!
+2026-11-23T13:28:54.178Z [info] plugin-installed ads-client 2.1.0
+2026-11-23T13:28:54.179Z [info] plugin-installed node-opcua 2.149.0
+2026-11-23T13:28:54.179Z [info] plugin-installed modbus-serial 8.0.19
+2026-11-23T13:28:54.179Z [info] plugin-installed node-bacnet 0.2.4
+2026-11-23T13:28:54.180Z [info] plugin-installed odbc 2.4.9
+2026-11-23T13:28:54.180Z [info] plugin-installed node-red 4.1.1
+2026-11-23T13:28:54.180Z [info] runtime init plugins successful!
+2026-11-23T13:28:54.182Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-11-23T13:28:54.185Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-11-23T13:28:54.186Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-11-23T13:28:54.186Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-11-23T13:28:54.191Z [info] currentstorage init successful!
+2026-11-23T13:28:54.192Z [info] apikeys.apiKeysStorage-init successful!
+2026-11-23T13:28:54.192Z [info] runtime init apiKeys successful!
+2026-11-23T13:28:54.196Z [info] runtime init scheduler services successful!
+2026-11-23T13:28:54.198Z [info] users.usrstorage-init successful!
+2026-11-23T13:28:54.198Z [info] runtime init users successful!
+2026-11-23T13:28:54.213Z [info] project.prjstorage-init-successful!
+2026-11-23T13:28:54.213Z [info] runtime init project successful!
+2026-11-23T13:28:54.213Z [info] FUXA init in  267ms.
+2026-11-23T13:28:54.254Z [info] daqstorage reset!
+2026-11-23T13:28:54.255Z [info] 'FUXA Server' data loaded (32)
+2026-11-23T13:28:54.255Z [info] 'FUXA Server' created
+2026-11-23T13:28:54.266Z [info] 'MQTT' data loaded (12)
+2026-11-23T13:28:54.266Z [info] 'MQTT' created
+2026-11-23T13:28:55.520Z [info] 'OPCUA' data loaded (157)
+2026-11-23T13:28:55.521Z [info] 'OPCUA' created
+2026-11-23T13:28:55.527Z [info] 'FUXA Server' start
+2026-11-23T13:28:55.527Z [info] 'MQTT' start
+2026-11-23T13:28:55.527Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-11-23T13:28:55.528Z [info] 'OPCUA' start
+2026-11-23T13:28:55.528Z [info] alarms check start
+2026-11-23T13:28:55.529Z [info] notificator check start
+2026-11-23T13:28:55.529Z [info] scripts.start-checkstatus
+2026-11-23T13:28:55.529Z [info] jobs check start
+2026-11-23T13:28:55.532Z [info] FUXA started!
+2026-11-23T13:28:55.899Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123135310.db' database
+2026-11-23T13:28:55.899Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123142854.db' database
+2026-11-23T13:28:55.899Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123135310.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123142854.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123142855.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123135312.db' database
+2026-11-23T13:28:55.900Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-11-23T13:28:55.952Z [info] 'FUXA Server' restored 0/0 values
+2026-11-23T13:28:55.963Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20261123135310.db'
+2026-11-23T13:28:55.964Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-11-23T13:28:55.964Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123135310.db'
+2026-11-23T13:28:55.966Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-11-23T13:28:55.967Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123142854.db' database
+2026-11-23T13:28:55.967Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123142854.db' database
+2026-11-23T13:28:55.969Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123135312.db'
+2026-11-23T13:28:55.969Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-11-23T13:28:55.978Z [info] 'MQTT' connected!
+2026-11-23T13:28:55.982Z [info] daqstorage.load-map successful! '0'
+2026-11-23T13:28:56.018Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123142855.db' database
+2026-11-23T13:28:56.019Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-11-23T13:28:56.027Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/archive/daq-data_d_72b849b1-6888467b_20261123135310_20261123142656.db'
+2026-11-23T13:28:56.028Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-11-23T13:28:56.040Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/archive/daq-data_0_20261123135310_20261123142727.db'
+2026-11-23T13:28:56.055Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123135312.db' database deleted!
+2026-11-23T13:28:56.059Z [info] 'MQTT' restored 0/0 values
+2026-11-23T13:28:56.126Z [info] 'OPCUA' connection
+2026-11-23T13:28:56.135Z [info] 'OPCUA' connected!
+2026-11-23T13:28:56.156Z [info] 'OPCUA' subscription created!
+2026-11-23T13:28:56.159Z [info] 'OPCUA' restored 0/0 values
+2026-11-23T13:28:56.741Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-11-23T13:28:57.330Z [info] alarms.alarmstorage-init-successful!
+2026-11-23T13:28:57.533Z [info] [Node-RED] Started at /nodered
+2026-11-23T13:28:57.537Z [info] WebServer is running http://127.0.0.1:1881/
+2026-11-23T13:29:00.760Z [info] socket.io client connected bDXMbolvhcHu9LlKAAAB
+2026-11-23T13:55:44.221Z [info] FUXA V.1.2.8-2638
+2026-11-23T13:55:44.231Z [info] daqstorage: init successful!
+2026-11-23T13:55:44.486Z [info] api: init successful!
+2026-11-23T13:55:44.490Z [info] plugin-installed ads-client 2.1.0
+2026-11-23T13:55:44.490Z [info] plugin-installed node-opcua 2.149.0
+2026-11-23T13:55:44.490Z [info] plugin-installed modbus-serial 8.0.19
+2026-11-23T13:55:44.490Z [info] plugin-installed node-bacnet 0.2.4
+2026-11-23T13:55:44.491Z [info] plugin-installed odbc 2.4.9
+2026-11-23T13:55:44.491Z [info] plugin-installed node-red 4.1.1
+2026-11-23T13:55:44.491Z [info] runtime init plugins successful!
+2026-11-23T13:55:44.494Z [info] currentstorage.connected-to /usr/src/app/FUXA/server/_db/currentTagReadings.db database
+2026-11-23T13:55:44.494Z [info] apiKeysStorage.connected /usr/src/app/FUXA/server/_appdata/apikeys.fuxap.db database
+2026-11-23T13:55:44.495Z [info] prjstorage.connected-to /usr/src/app/FUXA/server/_appdata/project.fuxap.db database
+2026-11-23T13:55:44.495Z [info] usrstorage.connected /usr/src/app/FUXA/server/_appdata/users.fuxap.db database
+2026-11-23T13:55:44.504Z [info] apikeys.apiKeysStorage-init successful!
+2026-11-23T13:55:44.505Z [info] runtime init apiKeys successful!
+2026-11-23T13:55:44.505Z [info] currentstorage init successful!
+2026-11-23T13:55:44.511Z [info] runtime init scheduler services successful!
+2026-11-23T13:55:44.517Z [info] users.usrstorage-init successful!
+2026-11-23T13:55:44.518Z [info] runtime init users successful!
+2026-11-23T13:55:44.532Z [info] project.prjstorage-init-successful!
+2026-11-23T13:55:44.532Z [info] runtime init project successful!
+2026-11-23T13:55:44.532Z [info] FUXA init in  341ms.
+2026-11-23T13:55:44.593Z [info] daqstorage reset!
+2026-11-23T13:55:44.594Z [info] 'FUXA Server' data loaded (32)
+2026-11-23T13:55:44.595Z [info] 'FUXA Server' created
+2026-11-23T13:55:44.605Z [info] 'MQTT' data loaded (12)
+2026-11-23T13:55:44.606Z [info] 'MQTT' created
+2026-11-23T13:55:45.720Z [info] 'OPCUA' data loaded (157)
+2026-11-23T13:55:45.720Z [info] 'OPCUA' created
+2026-11-23T13:55:45.727Z [info] 'FUXA Server' start
+2026-11-23T13:55:45.728Z [info] 'MQTT' start
+2026-11-23T13:55:45.728Z [info] 'MQTT' try to connect mqtt://mqttbroker:1883
+2026-11-23T13:55:45.728Z [info] 'OPCUA' start
+2026-11-23T13:55:45.729Z [info] alarms check start
+2026-11-23T13:55:45.729Z [info] notificator check start
+2026-11-23T13:55:45.729Z [info] scripts.start-checkstatus
+2026-11-23T13:55:45.729Z [info] jobs check start
+2026-11-23T13:55:45.732Z [info] FUXA started!
+2026-11-23T13:55:46.001Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123142854.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123145544.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123145544.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123142854.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123145545.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123142855.db' database
+2026-11-23T13:55:46.002Z [info] daqstorage.bind-daq-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-11-23T13:55:46.050Z [info] 'FUXA Server' restored 0/0 values
+2026-11-23T13:55:46.052Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_0_20261123142854.db'
+2026-11-23T13:55:46.053Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_0.db' database
+2026-11-23T13:55:46.053Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123142854.db'
+2026-11-23T13:55:46.053Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_72b849b1-6888467b.db' database
+2026-11-23T13:55:46.055Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_0_20261123145544.db' database
+2026-11-23T13:55:46.058Z [info] 'MQTT' connected!
+2026-11-23T13:55:46.060Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123142855.db'
+2026-11-23T13:55:46.061Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_72b849b1-6888467b_20261123145544.db' database
+2026-11-23T13:55:46.061Z [info] daqstorage.connected-to-map '/usr/src/app/FUXA/server/_db/daq-map_d_c0a5e5eb-b3fb4afb.db' database
+2026-11-23T13:55:46.069Z [info] daqstorage.load-map successful! '0'
+2026-11-23T13:55:46.085Z [info] daqstorage.load-map successful! 'd_72b849b1-6888467b'
+2026-11-23T13:55:46.099Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/archive/daq-data_d_72b849b1-6888467b_20261123142854_20261123144816.db'
+2026-11-23T13:55:46.100Z [info] daqstorage.connected-to-data '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123145545.db' database
+2026-11-23T13:55:46.105Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/daq-data_d_c0a5e5eb-b3fb4afb_20261123142855.db' database deleted!
+2026-11-23T13:55:46.106Z [info] daqstorage.load-map successful! 'd_c0a5e5eb-b3fb4afb'
+2026-11-23T13:55:46.106Z [info] 'MQTT' restored 0/0 values
+2026-11-23T13:55:46.115Z [info] daqstorage.check-to-archive-db-file '/usr/src/app/FUXA/server/_db/archive/daq-data_0_20261123142854_20261123144930.db'
+2026-11-23T13:55:46.920Z [info] alarmsstorage.connected-to /usr/src/app/FUXA/server/_appdata/alarms.fuxap.db database.
+2026-11-23T13:55:47.625Z [info] alarms.alarmstorage-init-successful!
+2026-11-23T13:55:47.900Z [info] [Node-RED] Started at /nodered
+2026-11-23T13:55:47.902Z [info] WebServer is running http://127.0.0.1:1881/
+2026-11-23T13:55:48.001Z [info] 'OPCUA' connection
+2026-11-23T13:55:48.007Z [info] 'OPCUA' connected!
+2026-11-23T13:55:48.014Z [info] 'OPCUA' subscription created!
+2026-11-23T13:55:48.015Z [info] 'OPCUA' restored 0/0 values
+2026-11-23T13:56:20.619Z [info] socket.io client connected h7gYFqxs2HRcoe29AAAB
+2026-11-23T14:06:26.103Z [info] socket.io client connected jQRN16X5qLXyQODcAAAE
+2026-11-23T14:06:38.625Z [info] socket.io client connected zHF2o963NKs_LTn2AAAH
