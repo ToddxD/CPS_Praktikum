@@ -120,31 +120,59 @@ class OpcUaServer:
         await node.write_value(ua.Variant(value, ua.VariantType.Int32))
 
     async def _dispatch_loop(self):
-        """Gibt freien Maschinen (Zustand 0) den naechsten Job aus ihrer Warteschlange
-        und verteilt die Anschlussleistung (VerfuegbareLeistung = Limit - Leistung
-        aller anderen Maschinen)."""
+        """Gibt freien Maschinen (Zustand 0) den naechsten Job aus ihrer Warteschlange und
+        erteilt die Leistung:
+
+        Ein Worker schreibt seinen Bedarf nur in LeistungAngefordert. Allein dieser Server
+        erhoeht aktuelleStufe.Power (Freigabe) -- und das nur, wenn die Summe aller Power-Werte
+        danach das Limit nicht ueberschreitet. Freigaben erfolgen strikt in der Reihenfolge der
+        Anfragen (FIFO), so verhungern Maschinen mit hohem Bedarf nicht. Die Schleife laeuft
+        sequentiell, daher kann die Summe das Limit nie ueberschreiten (der Worker senkt Power
+        beim Stufenende nur auf 0)."""
         ns = self.namespace
         # Knoten einmal aufloesen (Browse-Pfade pro Zyklus waeren bei vielen Maschinen teuer)
         nodes = {}
         for name, node in self.machines.items():
             nodes[name] = {
                 "power": await node.get_child([f"{ns}:aktuelleStufe", f"{ns}:Power"]),
+                "req": await node.get_child([f"{ns}:LeistungAngefordert"]),
                 "avail": await node.get_child([f"{ns}:VerfuegbareLeistung"]),
                 "state": await node.get_child([f"{ns}:Zustand"]),
             }
+        fifo: list[str] = []  # Maschinen mit offener Leistungsanfrage, aelteste zuerst
         while True:
             try:
-                power = {}
+                power, req = {}, {}
                 for name in self.machines:
                     power[name] = float(await nodes[name]["power"].read_value() or 0.0)
+                    req[name] = float(await nodes[name]["req"].read_value() or 0.0)
+
+                # offene Anfragen = angefordert, aber noch nicht freigegeben
+                fifo = [n for n in fifo if req[n] > 0 and power[n] == 0]
+                for name in self.machines:
+                    if req[name] > 0 and power[name] == 0 and name not in fifo:
+                        fifo.append(name)
+
                 total = sum(power.values())
-
-                for name, node in self.machines.items():
-                    avail = max(0.0, self.power_limit - (total - power[name]))
-                    await nodes[name]["avail"].write_value(
-                        ua.Variant(avail, ua.VariantType.Double)
+                while fifo:
+                    name = fifo[0]
+                    # Bedarf groesser als das ganze Limit: nur freigeben, wenn nichts anderes laeuft
+                    fits = total + req[name] <= self.power_limit or (
+                        total == 0 and req[name] > self.power_limit
                     )
+                    if not fits:
+                        break  # strikte Reihenfolge: nachrangige Anfragen nicht vorziehen
+                    await nodes[name]["power"].write_value(
+                        ua.Variant(req[name], ua.VariantType.Double)
+                    )
+                    total += req[name]
+                    fifo.pop(0)
 
+                free = max(0.0, self.power_limit - total)
+                for name, node in self.machines.items():
+                    await nodes[name]["avail"].write_value(
+                        ua.Variant(free, ua.VariantType.Double)
+                    )
                     queue = self.queues[name]
                     zustand = int(await nodes[name]["state"].read_value())
                     if zustand == 0 and queue:
@@ -156,7 +184,7 @@ class OpcUaServer:
                         self._last_queue_len[name] = len(queue)
             except Exception as exc:
                 print(f"[Dispatch] Fehler: {exc}")
-            await asyncio.sleep(0.1)
+            await asyncio.sleep(0.05)
 
     async def _create_machine_instances(
             self, objects_node, fdm_type, job_type, stage_type
@@ -217,6 +245,7 @@ class OpcUaServer:
                 (await child(machine, "DeadlinesErfuellt"), 0, ua.VariantType.Int32),
                 (await child(machine, "DurchlaufzeitMittel"), 0.0, ua.VariantType.Double),
                 (await child(machine, "Auslastung"), 0.0, ua.VariantType.Double),
+                (await child(machine, "LeistungAngefordert"), 0.0, ua.VariantType.Double),
             ]
             for node, value, vtype in initial:
                 await node.write_value(ua.Variant(value, vtype))
@@ -359,6 +388,7 @@ class OpcUaServer:
             ("DeadlinesErfuellt", 0, ua.VariantType.Int32),
             ("DurchlaufzeitMittel", 0.0, ua.VariantType.Double),  # Minuten (Sim-Zeit)
             ("Auslastung", 0.0, ua.VariantType.Double),  # Prozent, gleitend
+            ("LeistungAngefordert", 0.0, ua.VariantType.Double),  # W, vom Worker gesetzt
         ):
             kpi = await fdm_type.add_variable(
                 ua.NodeId(f"FDMType.{kpi_name}", self.namespace),
@@ -502,6 +532,15 @@ class OpcUaServer:
             varianttype=ua.VariantType.Boolean,
         )
         await self.tick_variable.set_writable()
+
+        # Anschlussleistung des Produktionssystems (Konfiguration POWER_LIMIT_W), nur lesbar,
+        # damit Dashboards das Limit nicht hartkodieren muessen.
+        await objects_node.add_variable(
+            ua.NodeId("Anschlussleistung", self.namespace),
+            ua.QualifiedName("Anschlussleistung", self.namespace),
+            self.power_limit,
+            varianttype=ua.VariantType.Double,
+        )
         await self._create_model()
 
     async def start(self):

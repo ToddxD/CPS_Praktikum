@@ -1,7 +1,6 @@
 import asyncio
 import collections
 import os
-import random
 from datetime import datetime, timedelta, timezone
 
 import paho.mqtt.client as mqtt
@@ -17,7 +16,7 @@ MACHINE_IDS = [
     if m.strip()
 ]
 MACHINE_TYPE = int(os.getenv("MACHINE_TYPE", "1"))
-POLL_INTERVAL = float(os.getenv("POLL_INTERVAL", "0.1"))
+POLL_INTERVAL = float(os.getenv("POLL_INTERVAL", "0.05"))
 MQTT_HOST = os.getenv("MQTT_HOST", "mqttbroker")
 MQTT_PORT = int(os.getenv("MQTT_PORT", "1883"))
 TICK_TOPIC = "tickgen/tick"
@@ -160,20 +159,23 @@ class FdmWorker:
 
     # ---- Energie ------------------------------------------------------------
     async def _acquire_power(self, power_w: float):
-        """Wartet, bis die Anschlussleistung fuer die Stufe reicht (Wartelogik)."""
-        while True:
-            avail = float(await self.nodes["VerfuegbareLeistung"].read_value())
-            if power_w <= avail:
-                await self._write("Power", power_w, ua.VariantType.Double)
-                # Der Server verteilt die Leistung im 0.5-s-Takt neu; danach pruefen,
-                # ob eine parallel startende Maschine uns die Leistung weggenommen hat.
-                await asyncio.sleep(0.3)
-                avail = float(await self.nodes["VerfuegbareLeistung"].read_value())
-                if power_w <= avail:
-                    return
-                await self._write("Power", 0.0, ua.VariantType.Double)
-            await self._set_state(WAITING_POWER)
-            await asyncio.sleep(0.1 + random.random() * 0.2)
+        """Fragt Leistung an und wartet auf die Freigabe des Servers (Wartelogik).
+
+        Der Worker setzt nur LeistungAngefordert. Aktuelle Power wird ausschliesslich vom
+        Server erhoeht, und nur wenn die Summe aller Maschinen das Limit einhaelt."""
+        await self._write("LeistungAngefordert", power_w, ua.VariantType.Double)
+        waiting = False
+        while float(await self.nodes["Power"].read_value()) != power_w:
+            if not waiting:
+                waiting = True
+                await self._set_state(WAITING_POWER)
+            await asyncio.sleep(0.02)
+
+    async def _release_power(self):
+        # Reihenfolge ist wichtig: erst die Anfrage zuruecknehmen, dann Power auf 0. Sonst sieht der
+        # Server dazwischen "Anfrage offen, Power 0" und erteilt die Leistung ein zweites Mal.
+        await self._write("LeistungAngefordert", 0.0, ua.VariantType.Double)
+        await self._write("Power", 0.0, ua.VariantType.Double)
 
     # ---- Job ----------------------------------------------------------------
     async def _execute_job(self, job_id: str, job_type: int, release, deadline):
@@ -192,7 +194,7 @@ class FdmWorker:
             await self._acquire_power(power_w)
             await self._set_state(ACTIVE)
             await self._wait_sim_until(self.sim_now + timedelta(minutes=minutes))
-            await self._write("Power", 0.0, ua.VariantType.Double)
+            await self._release_power()
 
         end = self.sim_now
         await self._write("endzeit", end, ua.VariantType.DateTime)
@@ -243,6 +245,7 @@ class FdmWorker:
                         "deadline": await node(job, "deadline"),
                         "Art": await node(stage, "Art"),
                         "Power": await node(stage, "Power"),
+                        "LeistungAngefordert": await node(machine, "LeistungAngefordert"),
                         "Duration": await node(stage, "Duration"),
                     }
                     print(
@@ -251,7 +254,7 @@ class FdmWorker:
                     )
                     # Reste einer unterbrochenen Stufe (Neustart mitten im Job) aufraeumen,
                     # sonst blockiert eine veraltete Power die Leistungsverteilung.
-                    await self._write("Power", 0.0, ua.VariantType.Double)
+                    await self._release_power()
                     await self._write("Duration", 0.0, ua.VariantType.Double)
                     await self._write("Art", 0, ua.VariantType.Int32)
                     await self._set_state(IDLE)
@@ -273,7 +276,7 @@ class FdmWorker:
                                 raise
                             except Exception as exc:
                                 print(f"[{self.machine_id}] Fehler bei '{job_id}': {exc}")
-                                await self._write("Power", 0.0, ua.VariantType.Double)
+                                await self._release_power()
                                 await self._set_state(FAILED)
                                 await asyncio.sleep(2)
                                 await self._set_state(IDLE)
