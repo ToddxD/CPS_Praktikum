@@ -19,6 +19,8 @@ services:
       timeout: 3s
       retries: 10
       start_period: 10s
+    depends_on:
+      - mqttbroker
 
   tick_gen:
     build:
@@ -111,3 +113,20 @@ services:
     restart: unless-stopped
     depends_on:
       - mqttbroker
+
+  fdm_1:
+      build:
+        context: ./src/fdm
+        dockerfile: Dockerfile
+      image: fdm1:0.1
+      container_name: fdm1
+      restart: unless-stopped
+      environment:
+        OPC_SERVER_URL: "opc.tcp://opcua_server:4840/haw/cps"
+        MACHINE_ID: "FDM_1"
+        MACHINE_TYPE: "1"
+      depends_on:
+        mqttbroker:
+          condition: service_started
+        opcua_server:
+          condition: service_healthy

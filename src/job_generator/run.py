@@ -4,7 +4,7 @@ import datetime
 import sys
 import os
 
-from mqtt.mqtt_wrapper import MQTTWrapper
+from opcua_server.mqtt.mqtt_wrapper import MQTTWrapper
 
 TICK_TOPIC = "tickgen/tick"
 JOBS_TOPIC = "generator/jobs"
