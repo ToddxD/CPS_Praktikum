@@ -4,14 +4,14 @@ import datetime
 import sys
 import os
 
-from opcua_server.mqtt.mqtt_wrapper import MQTTWrapper
+from mqtt.mqtt_wrapper import MQTTWrapper
 
 TICK_TOPIC = "tickgen/tick"
 JOBS_TOPIC = "generator/jobs"
 STATE_TOPIC = "fuxa/generator/state"
 
 job_id = 0
-job_types = ["pla", "petg", "abs"]
+job_types = [1, 2, 3, 4]  # Jobtypen laut Aufgabenblatt 2.1.2
 state = "normal"
 tick_counter = 0
 job_randomness = 0
